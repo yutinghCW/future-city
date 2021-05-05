@@ -1,0 +1,50 @@
+nav#menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 0;
+    background-color: $primary;
+    ul {
+        display: inline-block;
+        vertical-align: text-top;
+        @include list(0, 0, none);
+        width: 20%;
+        line-height: 1.5;
+        .h4 {
+            color: $white;
+            font-weight: 600;
+        }
+        li {
+            a {
+                display: block;
+                padding: $fs18;
+                color: $white;
+                font-size: $fs16;
+                &:hover {
+                    background-color: $primary-lighten;
+                }
+            }
+        }
+    }
+}
+
+.search__block {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: $primary;
+    .container {
+        > * {
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h5 {
+            color: $white;
+        }
+    }
+}

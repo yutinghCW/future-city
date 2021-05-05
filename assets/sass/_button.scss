@@ -1,0 +1,54 @@
+a.btn, button.btn {
+    padding: 0;
+    text-decoration: none;
+    border: 0;
+    background-color: transparent;
+    &.btn--small {
+        display: table;
+        padding: 7px 14px;
+        font-size: $fs14;
+        line-height: 1;
+    }
+    &.btn--standard {
+        display: table;
+        padding: 13px 40px;
+        font-size: $fs14;
+        line-height: 1;
+    }
+    &.btn--outlined {
+        border: 1px solid;
+        @include border-radius(30px);
+        &.btn--black {
+            color: $black;
+            border-color: $black;
+        }
+        &.btn--white {
+            color: $white;
+            border-color: $white;
+        }
+        &.btn--primary {
+            color: $primary;
+            border-color: $primary;
+        }
+        &:hover {
+            color: $primary-variant !important;
+            border-color: $primary-variant !important;
+        }
+    }
+    &.btn--contained {
+        @include border-radius(30px);
+        &.btn--white {
+            color: $primary;
+            background-color: $white;
+            &:hover {
+                color: $white;
+                background-color: $primary-lighten;
+            }
+        }
+    }
+}
+
+a.text__link--white {
+    color: $white;
+    text-decoration: none;
+}

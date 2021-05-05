@@ -1,0 +1,34 @@
+.cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: $white;
+    font-size: 0;
+    background-color: $primary;
+    z-index: 1;
+    .cookies__text {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: $fs14;
+        @media screen and (min-width: 768px) {
+            width: calc(100% - 80px - (#{$fs14} * 4));
+            padding-right: 60px;
+        }
+        a {
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+    .cookies__btn {
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (min-width: 768px) {
+            display: inline-block !important;
+            vertical-align: middle;
+        }
+        @media screen and (max-width: 767px) {
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+ul.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+ul.breadcrumb li {
+  display: inline-block;
+}
+ul.breadcrumb li + li::before {
+  content: ">";
+  display: inline-block;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  font-size: 0.875rem;
+}
+ul.breadcrumb li a {
+  display: inline-block;
+  color: #000;
+  font-size: 0.875rem;
+}
+ul.breadcrumb li a:hover {
+  color: #25006E;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=article.css.map */

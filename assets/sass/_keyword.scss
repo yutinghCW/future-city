@@ -1,0 +1,37 @@
+.keyword {
+    @include list(0, 0, none);
+    font-size: 0;
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+        a {
+            display: block;
+            padding: 0 10px;
+            font-size: $fs16;
+            line-height: 2.375;
+            border: 1px solid $gray-200;
+        }
+    }
+    &.keyword--default {
+        li {
+            a {
+                color: $black;
+                &:hover {
+                    color: $primary-variant;
+                    border-color: $primary-variant;
+                }
+            }
+        }
+    }
+    &.keyword--white {
+        li {
+            a {
+                color: $white;
+                &:hover {
+                    background-color: $primary-lighten;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+// for change
+$tooltip-distance: 4px;
+
+// do not touch
+
+$position-before: calc(100% + 8px + #{$tooltip-distance});
+$position-after: calc(100% + 3px + #{$tooltip-distance});
+
+.tooltip {
+	position: relative;
+	outline: none;
+	&:before {
+		content: attr(data-tooltip);
+		padding: 8px 16px;
+		color: $white;
+		font-size: $fs14;
+        white-space: pre;
+		z-index: 998;
+		position: absolute;
+		cursor: default;
+		opacity: 0;
+		background-color: rgba($black, 0.85);
+		pointer-events: none;
+		transition: all ease-out 0.15s;
+		box-shadow: none;
+	}
+	&:hover {
+		&:before {
+			opacity: 1;
+			margin: 0;
+		}
+	}
+}
+
+.tooltip-top {
+	&:before {
+		bottom: $position-before;
+		transform: translateX(-50%);
+		left: 50%;
+		margin-bottom: -$tooltip-distance;
+	}
+}
+
+.tooltip-right {
+	&:before {
+		left: $position-before;
+		transform: translateY(-50%);
+		top: 50%;
+		margin-left: -$tooltip-distance;
+	}
+}
+
+.tooltip-bottom {
+	&:before {
+		top: $position-before;
+		transform: translateX(-50%);
+		left: 50%;
+		margin-top: -$tooltip-distance;
+	}
+}
+
+.tooltip-left {
+	&:before {
+		right: $position-before;
+		transform: translateY(-50%);
+		top: 50%;
+		margin-right: -$tooltip-distance;
+	}
+}

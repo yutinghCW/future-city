@@ -1,0 +1,19 @@
+$header-size-d: $fs32, $fs28, $fs22, $fs18, $fs16, $fs14;
+$header-size-m: $fs26, $fs22, $fs20, $fs18, $fs16, $fs14;
+
+@for $i from 1 through length($header-size-d) {
+    h#{$i} {
+        font-weight: 600;
+        @include breakpoint(1024px) {
+            font-weight: 500;
+        }
+    }
+    h#{$i}, .h#{$i} {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: nth($header-size-m, $i);
+        @include breakpoint(1024px) {
+            font-size: nth($header-size-d, $i);
+        }
+    }
+}

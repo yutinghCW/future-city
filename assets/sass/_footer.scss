@@ -1,0 +1,26 @@
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $white;
+    font-size: 0;
+    background-color: $primary;
+    > .container {
+        > span {
+            display: block;
+            @media screen and (min-width: 768px) {
+                text-align: center;
+            }
+            > span {
+                display: inline-block;
+                font-size: $fs14;
+                @media screen and (min-width: 768px) {
+                    margin-left: 0.5em;
+                    margin-right: 0.5em;
+                }
+            }
+            &:last-child {
+                font-size: $fs14;
+            }
+        }
+    }
+}
