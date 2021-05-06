@@ -14,8 +14,18 @@
 @import "_tooltip";
 @import "_search";
 
+@each $color, $value in $colors {
+	.text-#{$color} {
+		color: $value;
+	}
+	.background-#{$color} {
+		background-color: $value;
+	}
+}
+
 @import "_cookies";
 @import "_header";
 @import "_navigation";
+@import "_pagination";
 @import "_keyword";
 @import "_footer";

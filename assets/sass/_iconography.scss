@@ -25,6 +25,17 @@
     }
 }
 
+.sns__group {
+    @include list(0, 0, none);
+    font-size: 0;
+    li {
+        display: inline-block;
+        + li {
+            margin-left: 15px;
+        }
+    }
+}
+
 .sns__icon {
     display: block;
     padding: 5px;

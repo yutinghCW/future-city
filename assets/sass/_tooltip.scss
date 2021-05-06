@@ -1,28 +1,23 @@
-// for change
-$tooltip-distance: 4px;
-
-// do not touch
-
-$position-before: calc(100% + 8px + #{$tooltip-distance});
-$position-after: calc(100% + 3px + #{$tooltip-distance});
+$position-before: calc(100% + 10px);
 
 .tooltip {
 	position: relative;
 	outline: none;
 	&:before {
+		position: absolute;
 		content: attr(data-tooltip);
-		padding: 8px 16px;
+		padding: 8px 20px;
 		color: $white;
+        -webkit-text-fill-color: $white;
 		font-size: $fs14;
         white-space: pre;
-		z-index: 998;
-		position: absolute;
-		cursor: default;
 		opacity: 0;
 		background-color: rgba($black, 0.85);
 		pointer-events: none;
-		transition: all ease-out 0.15s;
-		box-shadow: none;
+		cursor: default;
+		@include box-shadow(none);
+		@include transition(all ease-out 0.15s);
+		z-index: 998;
 	}
 	&:hover {
 		&:before {
@@ -34,36 +29,32 @@ $position-after: calc(100% + 3px + #{$tooltip-distance});
 
 .tooltip-top {
 	&:before {
-		bottom: $position-before;
-		transform: translateX(-50%);
 		left: 50%;
-		margin-bottom: -$tooltip-distance;
+		bottom: $position-before;
+	    @include translateX(-50%);
 	}
 }
 
 .tooltip-right {
 	&:before {
-		left: $position-before;
-		transform: translateY(-50%);
 		top: 50%;
-		margin-left: -$tooltip-distance;
+		left: $position-before;
+		@include translateY(-50%);
 	}
 }
 
 .tooltip-bottom {
 	&:before {
 		top: $position-before;
-		transform: translateX(-50%);
 		left: 50%;
-		margin-top: -$tooltip-distance;
+		@include translateX(-50%);
 	}
 }
 
 .tooltip-left {
 	&:before {
-		right: $position-before;
-		transform: translateY(-50%);
 		top: 50%;
-		margin-right: -$tooltip-distance;
+		right: $position-before;
+		@include translateY(-50%);
 	}
 }

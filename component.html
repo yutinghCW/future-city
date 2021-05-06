@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <link rel="stylesheet" href="assets/css/article.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="h3 mt-40 mb-10">Cookie Bar</h2>
+        <p class="mt-0 mb-10">
+            向下滑動半屏高度後，自動收起 cookie bar；重新整理或進入其他頁面時，再次顯示。<br>
+            直到使用者點擊「我知道了」，cookie bar 才會真的消失。
+        </p>
+    </div>
+    <div class="cookies" style="position: static;">
+        <div class="container py-15">
+            <div class="cookies__text">為提供您更多優質的內容，本網站使用 cookies 分析技術。若繼續閱覽本網站內容，即表示您同意我們使用 cookies，關於更多 cookies 以及相關政策更新資訊，請閱讀我們的<a href="#!" target="_blank" rel="noopener noreferrer">隱私權政策與使用條款</a>。</div>
+            <button class="cookies__btn btn btn--contained btn--white btn--standard">我知道了</button>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="h3 mt-40 mb-10">Header</h2>
+    </div>
+    <header>
+        <div class="container">
+            <div id="btn-hamburger" class="hamburger"><span></span><span></span><span></span></div>
+            <div id="btn-search" class="icon icon-search"></div>
+            <a href="#!" class="logo">
+                <img src="assets/images/logo.svg" alt="">
+            </a>
+            <button class="btn btn--small btn--outlined btn--black">訂閱電子報</button>
+            <ul class="sns__group">
+                <li>
+                    <a class="sns__icon sns__icon--facebook tooltip tooltip-bottom" data-tooltip="追蹤未來城市粉絲專頁" href="#!" target="_blank" rel="noopener noreferrer">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="sns__icon sns__icon--instagram tooltip tooltip-bottom" data-tooltip="追蹤未來城市instagram" href="#!" target="_blank" rel="noopener noreferrer">
+                        <i class="icon icon-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="sns__icon sns__icon--default" href="#!" target="_blank" rel="noopener noreferrer">
+                        <i class="icon icon-user-filled"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav id="menu">
+        <div class="container text-center">
+            <ul>
+                <div class="h4 mt-0 mb-5">AI科技</div>
+                <li><a href="#!">智慧醫療</a></li>
+                <li><a href="#!">智慧製造</a></li>
+                <li><a href="#!">智慧交通</a></li>
+                <li><a href="#!">智慧建築</a></li>
+                <li><a href="#!">智慧金融</a></li>
+                <li><a href="#!">智慧隱私</a></li>
+            </ul>
+            <ul>
+                <div class="h4 mt-0 mb-5">城市治理</div>
+                <li><a href="#!">地方創生</a></li>
+                <li><a href="#!">多元平權</a></li>
+            </ul>
+            <ul>
+                <div class="h4 mt-0 mb-5">設計美學</div>
+                <li><a href="#!">政府美學</a></li>
+                <li><a href="#!">社會設計</a></li>
+            </ul>
+            <ul>
+                <div class="h4 mt-0 mb-5">永續發展</div>
+                <li><a href="#!">SDGs</a></li>
+            </ul>
+            <ul>
+                <div class="h4 mt-0 mb-5">其他</div>
+                <li><a href="#!">深度專題</a></li>
+                <li><a href="#!">專欄作者</a></li>
+                <li><a href="#!">關於我們</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="search" class="search__block">
+        <div class="container py-30">
+            <form class="form" action="#!" method="post">
+                <div class="search__group search__group--white">
+                    <input type="email" class="search__input" placeholder="請輸入關鍵字">
+                    <button type="submit" class="search__submit"><i class="icon icon-search"></i></button>
+                </div>
+            </form>
+            <h5 class="mt-20 mb-10">熱門關鍵字</h5>
+            <ul class="keyword keyword--white">
+                <li>
+                    <a href="#!">
+                        #台北市
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        #城市治理
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        #數位政府
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        #數位轉型
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        #智慧城市
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <div class="py-10"></div>
+            <h2 class="h3 mt-40 mb-10">顏色</h2>
+            <ul class="color__bar">
+                <li>
+                    <span class="p-15 background-gray-100"></span>
+                    <span class="p-10">#F0F0F0</span>
+                </li>
+                <li>
+                    <span class="p-15 background-gray-200"></span>
+                    <span class="p-10">#E0E0E0</span>
+                </li>
+                <li>
+                    <span class="p-15 background-gray-300"></span>
+                    <span class="p-10">#8C8C8C</span>
+                </li>
+                <li>
+                    <span class="p-15 background-gray-400"></span>
+                    <span class="p-10">#646464</span>
+                </li>
+                <li>
+                    <span class="p-15 background-primary"></span>
+                    <span class="p-10">#3C00B4</span>
+                </li>
+                <li>
+                    <span class="p-15 background-primary-lighten"></span>
+                    <span class="p-10">#501BBB</span>
+                </li>
+                <li>
+                    <span class="p-15 background-primary-variant"></span>
+                    <span class="p-10">#25006E</span>
+                </li>
+            </ul>
+            <h2 class="h3 mt-40 mb-10">字級</h2>
+            <table>
+                <tr>
+                    <th class="p-10 text-left"></th>
+                    <th class="p-10 text-center">≧ 1024</th>
+                    <th class="p-10 text-center">< 1024</th>
+                </tr>
+                <tr>
+                    <td class="p-10 text-left"><div class="h1 my-0">H1</div></td>
+                    <td class="p-10 text-center">32px</td>
+                    <td class="p-10 text-center">26px</td>
+                </tr>
+                <tr>
+                    <td class="p-10 text-left"><div class="h2 my-0">H2</div></td>
+                    <td class="p-10 text-center">28px</td>
+                    <td class="p-10 text-center">22px</td>
+                </tr>
+                <tr>
+                    <td class="p-10 text-left"><div class="h3 my-0">H3</div></td>
+                    <td class="p-10 text-center">22px</td>
+                    <td class="p-10 text-center">20px</td>
+                </tr>
+                <tr>
+                    <td class="p-10 text-left"><div class="h4 my-0">H4</div></td>
+                    <td class="p-10 text-center">18px</td>
+                    <td class="p-10 text-center">18px</td>
+                </tr>
+                <tr>
+                    <td class="p-10 text-left"><div class="h5 my-0">H5</div></td>
+                    <td class="p-10 text-center">16px</td>
+                    <td class="p-10 text-center">16px</td>
+                </tr>
+                <tr>
+                    <td class="p-10 text-left"><div class="h6 my-0">H6</div></td>
+                    <td class="p-10 text-center">14px</td>
+                    <td class="p-10 text-center">14px</td>
+                </tr>
+            </table>
+            <h2 class="h3 mt-40 mb-10">圖示</h2>
+            <div class="h4 my-0 pt-10">
+                <i class="icon icon-arrow-left px-10"></i>
+                <i class="icon icon-arrow-right px-10"></i>
+                <i class="icon icon-chevron-left px-10"></i>
+                <i class="icon icon-chevron-right px-10"></i>
+                <i class="icon icon-close px-10"></i>
+                <i class="icon icon-search px-10"></i>
+                <i class="icon icon-user-filled px-10"></i>
+                <i class="icon icon-queot px-10"></i>
+                <i class="icon icon-facebook px-10"></i>
+                <i class="icon icon-instagram px-10"></i>
+                <i class="icon icon-line px-10"></i>
+                <i class="icon icon-link px-10"></i>
+                <i class="icon icon-eye px-10"></i>
+            </div>
+            <h2 class="h3 mt-40 mb-10">麵包屑列 Breadcrumb</h2>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb-item"><a href="master-channel.html">城市治理</a></li>
+                    <li class="breadcrumb-item"><a href="sub-channel.html">政府美學</a></li>
+                </ul>
+            </nav>
+            <h2 class="h3 mt-40 mb-10">分頁 Pagination</h2>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true"><i class="icon icon-arrow-left"></i></span>
+                            <span class="sr-only">上一頁</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">...</li>
+                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true"><i class="icon icon-arrow-right"></i></span>
+                            <span class="sr-only">下一頁</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <h2 class="h3 mt-40 mb-10">關鍵字 Keyword</h2>
+            <h2 class="h4 text-gray-400 my-10">預設值</h2>
+            <div class="background-white p-20">
+                <ul class="keyword keyword--default">
+                    <li>
+                        <a href="#!">
+                            #台北市
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            #城市治理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            #數位政府
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            #數位轉型
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            #智慧城市
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="h4 text-gray-400 mt-0 mb-10">白色版</h2>
+            <div class="background-primary p-20">
+                <ul class="keyword keyword--white">
+                    <li>
+                        <a href="#!">
+                            #台北市
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            #城市治理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            #數位政府
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            #數位轉型
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            #智慧城市
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="h3 mt-40 mb-10">工具提示框 Tooltip</h2>
+            <ul class="sns__group">
+                <li class="p-10">
+                    <a class="sns__icon sns__icon--facebook p-0 tooltip tooltip-top" data-tooltip="追蹤粉專" href="#!" target="_blank" rel="noopener noreferrer">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+                <li class="p-10">
+                    <a class="sns__icon sns__icon--facebook p-0 tooltip tooltip-bottom" data-tooltip="追蹤粉專" href="#!" target="_blank" rel="noopener noreferrer">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+                <li class="p-10">
+                    <a class="sns__icon sns__icon--facebook p-0 tooltip tooltip-left" data-tooltip="追蹤粉專" href="#!" target="_blank" rel="noopener noreferrer">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+                <li class="p-10">
+                    <a class="sns__icon sns__icon--facebook p-0 tooltip tooltip-right" data-tooltip="追蹤粉專" href="#!" target="_blank" rel="noopener noreferrer">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+            <h2 class="h3 mt-40 mb-10">搜尋框 Search Group</h2>
+            <div class="search__group search__group--white">
+                <input type="email" class="search__input" placeholder="請輸入關鍵字">
+                <button type="submit" class="search__submit"><i class="icon icon-search"></i></button>
+            </div>
+            <div class="pt-50"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <span>
+                <span>讀者服務專線：<a class="text__link--white" href="tel:+886226620332">886-2-2662-0332</a></span>
+                <span>傳真電話：<a class="text__link--white" href="tel:+886226626048">886-2-2662-6048</a></span>
+                <span>聯絡信箱：<a class="text__link--white" href="mailto:futurecity@cw.com.tw">futurecity@cw.com.tw</a></span>
+                <span>服務時間：週一～週五：09:00~17:30</span>
+            </span>
+            <span>
+                Copyright © 2021 天下雜誌. All rights reserved. 版權所有，禁止擅自轉貼節錄
+            </span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/style.js"></script>
+</body>
+</html>

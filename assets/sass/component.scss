@@ -1,0 +1,13 @@
+@import "_mixin";
+@import "_variables";
+@import "_color";
+
+.color__bar {
+    @include list(0, 0, none);
+    li {
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.color__bar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.color__bar li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=component.css.map */
