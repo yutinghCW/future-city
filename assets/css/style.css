@@ -4054,10 +4054,12 @@ a.text__link--white {
 }
 
 header {
+  position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #E0E0E0;
   background-color: #fff;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   header {
