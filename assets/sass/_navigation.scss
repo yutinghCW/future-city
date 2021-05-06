@@ -8,23 +8,47 @@ nav#menu {
     font-size: 0;
     background-color: $primary;
     ul {
-        display: inline-block;
         vertical-align: text-top;
         @include list(0, 0, none);
-        width: 20%;
         line-height: 1.5;
+        @media screen and (min-width: 768px) {
+            display: inline-block;
+            width: 20%;
+        }
+        @media screen and (max-width: 767px) {
+            + ul {
+                margin-top: 20px;
+            }
+        }
         .h4 {
             color: $white;
             font-weight: 600;
         }
         li {
+            width: 33.3333330%;
+            @media screen and (min-width: 500px) {
+                width: 25%;
+            }
+            @media screen and (min-width: 650px) {
+                width: 20%;
+            }
+            @media screen and (min-width: 768px) {
+                width: 100%;
+            }
+            @media screen and (max-width: 767px) {
+                display: inline-block;
+            }
             a {
                 display: block;
-                padding: $fs18;
+                padding: $fs13;
                 color: $white;
                 font-size: $fs16;
+                text-align: center;
                 &:hover {
                     background-color: $primary-lighten;
+                }
+                @media screen and (min-width: 768px) {
+                    padding: $fs18;
                 }
             }
         }

@@ -1,0 +1,17 @@
+table {
+    max-width: 660px;
+    width: 100%;
+    border: solid $gray-200;
+    border-width: 0 0 1px 1px;
+    tr {
+        th, td {
+            padding: $fs12;
+            border: solid $gray-200;
+            border-width: 1px 1px 0 0;
+        }
+        th {
+            font-weight: inherit;
+            background-color: $gray-100;
+        }
+    }
+}

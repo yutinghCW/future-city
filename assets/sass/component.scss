@@ -3,11 +3,16 @@
 @import "_color";
 
 .color__bar {
+    display: inline-block;
     @include list(0, 0, none);
+    vertical-align: text-top;
     li {
         span {
             display: inline-block;
             vertical-align: middle;
+            &:last-child {
+                width: 6em;
+            }
         }
     }
 }

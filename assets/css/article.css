@@ -24,4 +24,20 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+table {
+  max-width: 660px;
+  width: 100%;
+  border: solid #E0E0E0;
+  border-width: 0 0 1px 1px;
+}
+table tr th, table tr td {
+  padding: 0.75rem;
+  border: solid #E0E0E0;
+  border-width: 1px 1px 0 0;
+}
+table tr th {
+  font-weight: inherit;
+  background-color: #F0F0F0;
+}
+
 /*# sourceMappingURL=article.css.map */

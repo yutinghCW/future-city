@@ -10,18 +10,10 @@
 
 @import "_container";
 @import "_space";
+@import "_color-map";
 @import "_button";
 @import "_tooltip";
 @import "_search";
-
-@each $color, $value in $colors {
-	.text-#{$color} {
-		color: $value;
-	}
-	.background-#{$color} {
-		background-color: $value;
-	}
-}
 
 @import "_cookies";
 @import "_header";
@@ -29,3 +21,8 @@
 @import "_pagination";
 @import "_keyword";
 @import "_footer";
+
+hr {
+	border: solid $gray-200;
+    border-width: 1px 0 0;
+}

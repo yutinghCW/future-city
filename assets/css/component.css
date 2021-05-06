@@ -1,11 +1,16 @@
 .color__bar {
+  display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
+  vertical-align: text-top;
 }
 .color__bar li span {
   display: inline-block;
   vertical-align: middle;
+}
+.color__bar li span:last-child {
+  width: 6em;
 }
 
 /*# sourceMappingURL=component.css.map */

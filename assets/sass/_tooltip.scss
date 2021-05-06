@@ -25,36 +25,37 @@ $position-before: calc(100% + 10px);
 			margin: 0;
 		}
 	}
-}
-
-.tooltip-top {
-	&:before {
-		left: 50%;
-		bottom: $position-before;
-	    @include translateX(-50%);
+	&.tooltip--disabled {
+		&:before {
+			display: none;
+		}
 	}
-}
-
-.tooltip-right {
-	&:before {
-		top: 50%;
-		left: $position-before;
-		@include translateY(-50%);
+	&.tooltip-top {
+		&:before {
+			left: 50%;
+			bottom: $position-before;
+			@include translateX(-50%);
+		}
 	}
-}
-
-.tooltip-bottom {
-	&:before {
-		top: $position-before;
-		left: 50%;
-		@include translateX(-50%);
+	&.tooltip-right {
+		&:before {
+			top: 50%;
+			left: $position-before;
+			@include translateY(-50%);
+		}
 	}
-}
-
-.tooltip-left {
-	&:before {
-		top: 50%;
-		right: $position-before;
-		@include translateY(-50%);
+	&.tooltip-bottom {
+		&:before {
+			top: $position-before;
+			left: 50%;
+			@include translateX(-50%);
+		}
+	}
+	&.tooltip-left {
+		&:before {
+			top: 50%;
+			right: $position-before;
+			@include translateY(-50%);
+		}
 	}
 }

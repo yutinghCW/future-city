@@ -11,6 +11,14 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="my-0 pt-50">未來城市使用元件</h1>
+        <p class="mt-10 mb-0">
+            給維護者使用，新增樣式時請一併更新
+        </p>
+        <p class="h6 text-gray-400 my-0">
+            最後更新：2021-05-06 13:00
+        </p>
+        <hr class="mt-30 mb-50">
         <h2 class="h3 mt-40 mb-10">Cookie Bar</h2>
         <p class="mt-0 mb-10">
             向下滑動半屏高度後，自動收起 cookie bar；重新整理或進入其他頁面時，再次顯示。<br>
@@ -20,7 +28,7 @@
     <div class="cookies" style="position: static;">
         <div class="container py-15">
             <div class="cookies__text">為提供您更多優質的內容，本網站使用 cookies 分析技術。若繼續閱覽本網站內容，即表示您同意我們使用 cookies，關於更多 cookies 以及相關政策更新資訊，請閱讀我們的<a href="#!" target="_blank" rel="noopener noreferrer">隱私權政策與使用條款</a>。</div>
-            <button class="cookies__btn btn btn--contained btn--white btn--standard">我知道了</button>
+            <button class="cookies__btn btn btn--contained btn--white btn--standard btn--wide">我知道了</button>
         </div>
     </div>
     <div class="container">
@@ -53,39 +61,6 @@
             </ul>
         </div>
     </header>
-    <nav id="menu">
-        <div class="container text-center">
-            <ul>
-                <div class="h4 mt-0 mb-5">AI科技</div>
-                <li><a href="#!">智慧醫療</a></li>
-                <li><a href="#!">智慧製造</a></li>
-                <li><a href="#!">智慧交通</a></li>
-                <li><a href="#!">智慧建築</a></li>
-                <li><a href="#!">智慧金融</a></li>
-                <li><a href="#!">智慧隱私</a></li>
-            </ul>
-            <ul>
-                <div class="h4 mt-0 mb-5">城市治理</div>
-                <li><a href="#!">地方創生</a></li>
-                <li><a href="#!">多元平權</a></li>
-            </ul>
-            <ul>
-                <div class="h4 mt-0 mb-5">設計美學</div>
-                <li><a href="#!">政府美學</a></li>
-                <li><a href="#!">社會設計</a></li>
-            </ul>
-            <ul>
-                <div class="h4 mt-0 mb-5">永續發展</div>
-                <li><a href="#!">SDGs</a></li>
-            </ul>
-            <ul>
-                <div class="h4 mt-0 mb-5">其他</div>
-                <li><a href="#!">深度專題</a></li>
-                <li><a href="#!">專欄作者</a></li>
-                <li><a href="#!">關於我們</a></li>
-            </ul>
-        </div>
-    </nav>
     <section id="search" class="search__block">
         <div class="container py-30">
             <form class="form" action="#!" method="post">
@@ -94,7 +69,7 @@
                     <button type="submit" class="search__submit"><i class="icon icon-search"></i></button>
                 </div>
             </form>
-            <h5 class="mt-20 mb-10">熱門關鍵字</h5>
+            <h5 class="mt-20 mb-5">熱門關鍵字</h5>
             <ul class="keyword keyword--white">
                 <li>
                     <a href="#!">
@@ -124,6 +99,40 @@
             </ul>
         </div>
     </section>
+    <nav id="menu">
+        <div class="container">
+            <ul>
+                <div class="h4 text-sm-center mt-0 mb-5">AI科技</div>
+                <li><a href="#!">智慧醫療</a></li>
+                <li><a href="#!">智慧製造</a></li>
+                <li><a href="#!">智慧交通</a></li>
+                <li><a href="#!">智慧建築</a></li>
+                <li><a href="#!">智慧金融</a></li>
+                <li><a href="#!">智慧隱私</a></li>
+            </ul>
+            <ul>
+                <div class="h4 text-sm-center mt-0 mb-5">城市治理</div>
+                <li><a href="#!">地方創生</a></li>
+                <li><a href="#!">多元平權</a></li>
+            </ul>
+            <ul>
+                <div class="h4 text-sm-center mt-0 mb-5">設計美學</div>
+                <li><a href="#!">政府美學</a></li>
+                <li><a href="#!">社會設計</a></li>
+            </ul>
+            <ul>
+                <div class="h4 text-sm-center mt-0 mb-5">永續發展</div>
+                <li><a href="#!">SDGs</a></li>
+            </ul>
+            <ul>
+                <div class="h4 text-sm-center mt-0 mb-5">其他</div>
+                <li><a href="#!">深度專題</a></li>
+                <li><a href="#!">專欄作者</a></li>
+                <li><a href="#!">關於我們</a></li>
+            </ul>
+        </div>
+        <div class="container"></div>
+    </nav>
     <main>
         <div class="container">
             <div class="py-10"></div>
@@ -145,6 +154,8 @@
                     <span class="p-15 background-gray-400"></span>
                     <span class="p-10">#646464</span>
                 </li>
+            </ul>
+            <ul class="color__bar">
                 <li>
                     <span class="p-15 background-primary"></span>
                     <span class="p-10">#3C00B4</span>
@@ -161,39 +172,39 @@
             <h2 class="h3 mt-40 mb-10">字級</h2>
             <table>
                 <tr>
-                    <th class="p-10 text-left"></th>
-                    <th class="p-10 text-center">≧ 1024</th>
-                    <th class="p-10 text-center">< 1024</th>
+                    <th></th>
+                    <th>≧ 1024</th>
+                    <th>< 1024</th>
                 </tr>
                 <tr>
-                    <td class="p-10 text-left"><div class="h1 my-0">H1</div></td>
-                    <td class="p-10 text-center">32px</td>
-                    <td class="p-10 text-center">26px</td>
+                    <td><div class="h1 my-0">H1</div></td>
+                    <td align="center">32px</td>
+                    <td align="center">26px</td>
                 </tr>
                 <tr>
-                    <td class="p-10 text-left"><div class="h2 my-0">H2</div></td>
-                    <td class="p-10 text-center">28px</td>
-                    <td class="p-10 text-center">22px</td>
+                    <td><div class="h2 my-0">H2</div></td>
+                    <td align="center">28px</td>
+                    <td align="center">22px</td>
                 </tr>
                 <tr>
-                    <td class="p-10 text-left"><div class="h3 my-0">H3</div></td>
-                    <td class="p-10 text-center">22px</td>
-                    <td class="p-10 text-center">20px</td>
+                    <td><div class="h3 my-0">H3</div></td>
+                    <td align="center">22px</td>
+                    <td align="center">20px</td>
                 </tr>
                 <tr>
-                    <td class="p-10 text-left"><div class="h4 my-0">H4</div></td>
-                    <td class="p-10 text-center">18px</td>
-                    <td class="p-10 text-center">18px</td>
+                    <td><div class="h4 my-0">H4</div></td>
+                    <td align="center">18px</td>
+                    <td align="center">18px</td>
                 </tr>
                 <tr>
-                    <td class="p-10 text-left"><div class="h5 my-0">H5</div></td>
-                    <td class="p-10 text-center">16px</td>
-                    <td class="p-10 text-center">16px</td>
+                    <td><div class="h5 my-0">H5</div></td>
+                    <td align="center">16px</td>
+                    <td align="center">16px</td>
                 </tr>
                 <tr>
-                    <td class="p-10 text-left"><div class="h6 my-0">H6</div></td>
-                    <td class="p-10 text-center">14px</td>
-                    <td class="p-10 text-center">14px</td>
+                    <td><div class="h6 my-0">H6</div></td>
+                    <td align="center">14px</td>
+                    <td align="center">14px</td>
                 </tr>
             </table>
             <h2 class="h3 mt-40 mb-10">圖示</h2>
@@ -244,7 +255,7 @@
             </nav>
             <h2 class="h3 mt-40 mb-10">關鍵字 Keyword</h2>
             <h2 class="h4 text-gray-400 my-10">預設值</h2>
-            <div class="background-white p-20">
+            <div class="background-white px-20 py-15">
                 <ul class="keyword keyword--default">
                     <li>
                         <a href="#!">
@@ -274,7 +285,7 @@
                 </ul>
             </div>
             <h2 class="h4 text-gray-400 mt-0 mb-10">白色版</h2>
-            <div class="background-primary p-20">
+            <div class="background-primary px-20 py-15">
                 <ul class="keyword keyword--white">
                     <li>
                         <a href="#!">
@@ -304,6 +315,9 @@
                 </ul>
             </div>
             <h2 class="h3 mt-40 mb-10">工具提示框 Tooltip</h2>
+            <p class="mt-10 mb-20">
+                不支援行動裝置
+            </p>    
             <h2 class="h4 text-gray-400 mt-10 mb-0">方向</h2>
             <ul class="sns__group">
                 <li class="p-10">
@@ -336,7 +350,33 @@
                 <input type="email" class="search__input" placeholder="請輸入關鍵字">
                 <button type="submit" class="search__submit"><i class="icon icon-search"></i></button>
             </div>
-            <div class="pt-50"></div>
+            <h2 class="h3 mt-40 mb-10">表格 Tabble</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>自來水</th>
+                    <th>海淡水</th>
+                    <th>再生水</th>
+                </tr>
+                <tr>
+                    <td align="center">價格</td>
+                    <td align="center">約11元</td>
+                    <td align="center">約28元</td>
+                    <td align="center">約18元</td>
+                </tr>
+                <tr>
+                    <td align="center">工業用</td>
+                    <td align="center">可</td>
+                    <td align="center">可</td>
+                    <td align="center">可</td>
+                </tr>
+                <tr>
+                    <td align="center">民生用</td>
+                    <td align="center">可</td>
+                    <td align="center">可</td>
+                    <td align="center">不可</td>
+                </tr>
+            </table>
         </div>
     </main>
     <div class="container">

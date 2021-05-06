@@ -32,13 +32,11 @@ header {
         font-size: $fs22;
     }
     #btn-search {
+        left: 67px;
         padding: 5px;
         cursor: pointer;
-        @media screen and (min-width: 768px) {
-            left: 67px;
-        }
         @media screen and (max-width: 767px) {
-            right: 20px;
+            display: none;
         }
     }
     #btn-hamburger {
@@ -57,8 +55,15 @@ header {
     }
     .sns__group {
         right: 20px;
-        @media screen and (max-width: 767px) {
-            display: none;
+        li {
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+            &:last-child {
+                @media screen and (max-width: 767px) {
+                    display: block;
+                }
+            }    
         }
     }
 }
