@@ -12,7 +12,7 @@
         vertical-align: middle;
         font-size: $fs14;
         @media screen and (min-width: 768px) {
-            width: calc(100% - 80px - (#{$fs14} * 4));
+            width: calc(100% - 80px - 2px - (#{$fs14} * 4));
             padding-right: 60px;
         }
         a {

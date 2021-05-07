@@ -1,7 +1,7 @@
 a.btn, button.btn {
     padding: 0;
     text-decoration: none;
-    border: 0;
+    border: 1px solid;
     background-color: transparent;
     &.btn--small {
         display: table;
@@ -24,7 +24,6 @@ a.btn, button.btn {
         }
     }
     &.btn--outlined {
-        border: 1px solid;
         @include border-radius(30px);
         &.btn--black {
             color: $black;
@@ -33,26 +32,53 @@ a.btn, button.btn {
         &.btn--white {
             color: $white;
             border-color: $white;
+            &:hover {
+                color: $primary-lighten;
+                border-color: $primary-lighten;
+            }
         }
         &.btn--primary {
             color: $primary;
             border-color: $primary;
         }
         &:hover {
-            color: $primary-variant !important;
-            border-color: $primary-variant !important;
+            color: $primary-variant;
+            border-color: $primary-variant;
         }
     }
     &.btn--contained {
         @include border-radius(30px);
+        color: $white;
+        &.btn--black {
+            background-color: $black;
+            border-color: $black;
+        }
         &.btn--white {
             color: $primary;
             background-color: $white;
+            border-color: $white;
             &:hover {
-                color: $white;
                 background-color: $primary-lighten;
+                border-color: $primary-lighten;
             }
         }
+        &.btn--primary {
+            background-color: $primary;
+            border-color: $primary;
+            &:hover {
+                background-color: $primary-variant;
+                border-color: $primary-variant;
+            }
+        }
+        &:hover {
+            color: $white;
+        }
+    }
+    &[disabled] {
+        color: $gray-300 !important;
+        background-color: $gray-200 !important;
+        border-color: $gray-200 !important;
+        cursor: not-allowed !important;
     }
 }
 

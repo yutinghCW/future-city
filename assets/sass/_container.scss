@@ -35,4 +35,7 @@
     &.row-reverse {
         flex-direction: row-reverse;
     }
+    &.row-align-center {
+        align-items: center;
+    }
 }
