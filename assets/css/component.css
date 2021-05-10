@@ -13,4 +13,8 @@
   width: 6em;
 }
 
+.card__list {
+  max-width: 990px;
+}
+
 /*# sourceMappingURL=component.css.map */

@@ -59,7 +59,7 @@
         width: calc(100% - 60px);
         padding: 1rem;
         @include breakpoint(1024px) {
-            padding: 15px 1rem;
+            padding: 17px 1rem 13px;
         }
     }
     .search__submit {

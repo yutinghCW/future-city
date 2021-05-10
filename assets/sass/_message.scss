@@ -1,0 +1,46 @@
+.message {
+    .message__container {
+        position: relative;
+        .icon {
+            position: absolute;
+            top: 0;
+            right: -10px;
+            font-size: $fs20;
+        }
+        p {
+            span {
+                display: inline-block;
+            }
+        }
+        a.btn, button.btn {
+            display: inline-block;
+        }
+    }
+    &.message--center {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        @include translate(-50%, -50%);
+    }
+    &.message--dialogs {
+        max-width: 480px;
+        width: calc(100% - 40px);
+        padding: 20px 30px 30px;
+        background-color: $white;
+        .message__container {
+            padding-top: 40px;
+        }
+    }
+    &.message--notification {
+        display: table;
+        max-width: calc(100% - 40px);
+        width: auto;
+        padding: $fs18 2.5rem;
+        color: $white;
+        background-color: rgba($black, 0.85);
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
