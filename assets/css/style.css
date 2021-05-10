@@ -3822,6 +3822,17 @@ h6, .h6 {
 .form .form__input::-ms-input-placeholder {
   color: #8C8C8C;
 }
+.form .form__helper {
+  padding-top: 5px;
+  color: #8C8C8C;
+  font-size: 0.875rem;
+}
+.form .form__helper.form__helper--highlight {
+  color: #d60c18;
+}
+.form.form--error .form__input {
+  border-color: #d60c18;
+}
 
 a.btn, button.btn {
   padding: 0;
