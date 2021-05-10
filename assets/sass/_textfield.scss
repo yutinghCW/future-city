@@ -19,4 +19,17 @@
             // border-color: $gray-300;
         }
     }
+    .form__helper {
+        padding-top: 5px;
+        color: $gray-300;
+        font-size: $fs14;
+        &.form__helper--highlight {
+            color: $cw;
+        }
+    }
+    &.form--error {
+        .form__input {
+            border-color: $cw;
+        }
+    }
 }
