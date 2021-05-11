@@ -7,6 +7,7 @@ nav#menu {
     padding-bottom: 20px;
     font-size: 0;
     background-color: $primary;
+    z-index: 2;
     ul {
         vertical-align: text-top;
         @include list(0, 0, none);

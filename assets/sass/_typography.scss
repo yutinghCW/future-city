@@ -5,7 +5,7 @@ $header-size-m: $fs26, $fs22, $fs20, $fs18, $fs16, $fs14;
     h#{$i} {
         font-weight: 600;
         @include breakpoint(1024px) {
-            font-weight: 500;
+            // font-weight: 500;
         }
     }
     h#{$i}, .h#{$i} {
