@@ -1,6 +1,6 @@
-.card__list {
+.card__group {
     font-size: 0;
-    .card__item {
+    > .card__item {
         .card__image {
             position: relative;
             width: 100%;
@@ -82,8 +82,8 @@
             }
         }
     }
-    &.card__list--grid {
-        .card__item {
+    &.card__group--grid {
+        > .card__item {
             @media screen and (min-width: 768px) {
                 display: inline-block;
                 width: calc((100% - 60px) / 3);
@@ -126,8 +126,8 @@
             }
         }
     }
-    &.card__list--list {
-        .card__item {
+    &.card__group--list {
+        > .card__item {
             padding-top: 30px;
             padding-bottom: 30px;
             border-bottom: 1px solid $gray-200;
@@ -166,8 +166,8 @@
             }
         }
     }
-    &.card__list--author {
-        .card__item {
+    &.card__group--author {
+        > .card__item {
             padding-left: 20px;
             padding-right: 20px;
             @media screen and (min-width: 768px) {
@@ -190,12 +190,54 @@
             .card__image {
                 display: block;
                 width: 120px;
+            }
+            > .card__image {
                 margin-left: auto;
                 margin-right: auto;
                 @include border-radius(50%);
             }
             .card__text {
                 padding-top: 10px;
+            }
+        }
+        &.card__group--master {
+            > .card__item {
+                padding: 20px;
+                border: 1px solid $gray-200;
+                @media screen and (min-width: 768px) {
+                    width: calc((100% - 30px) / 2);
+                    padding: 30px;
+                    &:nth-child(2n) {
+                        margin-left: 30px;
+                    }
+                }
+                @media screen and (min-width: 1024px) {
+                    padding: 40px;
+                }
+            }
+            .card__news {
+                padding-top: 20px;
+                margin-top: 20px;
+                border-top: 1px solid $gray-200;
+                @media screen and (min-width: 768px) {
+                    padding-top: 25px;
+                    margin-top: 25px;
+                }
+                > * {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .card__text {
+                    width: calc(100% - 120px);
+                    padding-top: 0;
+                    padding-right: 10px;
+                    @media screen and (min-width: 768px) {
+                        padding-right: 20px;
+                    }
+                    > a.btn.h5 {
+                        -webkit-line-clamp: 2;
+                    }
+                }
             }
         }
     }
