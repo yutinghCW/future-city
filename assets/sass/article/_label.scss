@@ -1,0 +1,20 @@
+.article__label {
+    line-height: 1.5;
+    &::after {
+        @include clear;
+    }
+    > div {
+        @media screen and (max-width: 1023px) {
+            font-size: $fs16;
+        }
+        &:last-child {
+            float: right;
+        }
+        &:first-child {
+            float: left;
+        }
+        &.label {
+            color: $primary;
+        }
+    }
+}

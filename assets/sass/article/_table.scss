@@ -1,8 +1,31 @@
+.article__table {
+    @media screen and (max-width: 767px) {
+        display: grid;
+        grid-template-columns: auto 30px;
+        width: calc(100% + 60px);
+        margin-left: -30px;
+        margin-right: -30px;
+        padding: 0 30px 5px;
+        overflow: scroll;
+        &::after {
+            @include beforeafter('', block);
+            width: 30px;
+        }
+    }
+}
+
 table {
-    max-width: 660px;
-    width: 100%;
     border: solid $gray-200;
     border-width: 0 0 1px 1px;
+    @media screen and (max-width: 767px) {
+        min-width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 660px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     tr {
         th, td {
             padding: $fs12;

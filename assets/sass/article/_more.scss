@@ -1,0 +1,48 @@
+.more__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    appearance: none;
+    opacity: 0;
+    cursor: pointer;
+    &:checked {
+        ~ .more__btn::before {
+            content: $icon-chevron-top-circle;
+        }
+        ~ .more__text {
+            display: block;
+        }
+    }
+}
+.more__btn {
+    position: relative;
+    padding-right: $fs22;
+    color: $primary;
+    border-bottom: 1px dashed $primary;
+    cursor: pointer;
+    &::before {
+        @include beforeafter($icon-chevron-bottom-circle, block);
+        position: absolute;
+        top: 50%;
+        right: 2px;
+        font-size: $fs16;
+        font-family: $icomoon-font-family;
+        line-height: 1;
+        @include translateY(-50%);
+    }
+    &:hover {
+        color: $primary-variant;
+        border-color: $primary-variant;
+    }
+}
+.more__text {
+    display: none;
+    margin: 10px -20px;
+    padding: 20px 30px;
+    border: 1px solid $gray-200;
+    @media screen and (min-width: 1024px) {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+}

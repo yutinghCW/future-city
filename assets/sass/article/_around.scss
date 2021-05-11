@@ -1,0 +1,10 @@
+.article__around {
+    margin-bottom: 25px;
+    a.btn--text {
+        display: block;
+        text-decoration: underline;
+        + .btn--text {
+            margin-top: $fs16/2;
+        }
+    }
+}
