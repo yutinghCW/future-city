@@ -57,6 +57,16 @@
     content: $icon-line;
   }
 }
+.icon-chevron-top-circle {
+  &:before {
+    content: $icon-chevron-top-circle;
+  }
+}
+.icon-chevron-bottom-circle {
+  &:before {
+    content: $icon-chevron-bottom-circle;
+  }
+}
 .icon-arrow-left {
   &:before {
     content: $icon-arrow-left;

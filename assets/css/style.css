@@ -441,6 +441,14 @@ h6, .h6 {
   content: "";
 }
 
+.icon-chevron-top-circle:before {
+  content: "";
+}
+
+.icon-chevron-bottom-circle:before {
+  content: "";
+}
+
 .icon-arrow-left:before {
   content: "";
 }
