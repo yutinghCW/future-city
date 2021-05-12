@@ -13,10 +13,13 @@ article {
     justify-content: center;
     font-size: $fs18;
     @media screen and (min-width: 1024px) {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 140px calc(100% - 380px) 240px;
         grid-template-columns: 140px calc(100% - 380px) 240px;
     }
     @media screen and (min-width: 1280px) {
+        -ms-grid-columns: 140px 700px 140px;
         grid-template-columns: 140px 700px 140px;
     }
     .article__left {
