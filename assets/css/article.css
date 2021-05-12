@@ -206,9 +206,16 @@ article {
 }
 @media screen and (min-width: 1280px) {
   article {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
     -ms-grid-columns: 140px 700px 140px;
     grid-template-columns: 140px 700px 140px;
   }
+}
+article .article__left {
+  grid-column: 1;
+  -ms-grid-column: 1;
 }
 @media screen and (min-width: 1024px) {
   article .article__left {
@@ -222,6 +229,10 @@ article {
     position: sticky;
     top: calc(50% - 87px);
   }
+}
+article .article__right {
+  grid-column: 3;
+  -ms-grid-column: 3;
 }
 @media screen and (min-width: 1024px) {
   article .article__right {
@@ -241,6 +252,10 @@ article {
   }
 }
 
+.article__main {
+  grid-column: 2;
+  -ms-grid-column: 2;
+}
 .article__main .container {
   width: 100%;
 }

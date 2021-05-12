@@ -19,10 +19,15 @@ article {
         grid-template-columns: 140px calc(100% - 380px) 240px;
     }
     @media screen and (min-width: 1280px) {
+        width: 980px;
+        margin-left: auto;
+        margin-right: auto;
         -ms-grid-columns: 140px 700px 140px;
         grid-template-columns: 140px 700px 140px;
     }
     .article__left {
+        grid-column: 1;
+        -ms-grid-column: 1;
         @media screen and (min-width: 1024px) {
             padding-right: 15px;
         }
@@ -36,6 +41,8 @@ article {
         }
     }
     .article__right {
+        grid-column: 3;
+        -ms-grid-column: 3;
         @media screen and (min-width: 1024px) {
             padding-left: 30px;
         }
@@ -53,6 +60,8 @@ article {
 }
 
 .article__main {
+    grid-column: 2;
+    -ms-grid-column: 2;
     .container {
         width: 100%;
         @media screen and (max-width: 1023px) {
