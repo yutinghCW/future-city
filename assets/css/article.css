@@ -256,6 +256,11 @@ article .article__right {
   grid-column: 2;
   -ms-grid-column: 2;
 }
+@media screen and (min-width: 1280px) {
+  .article__main {
+    width: 700px;
+  }
+}
 .article__main .container {
   width: 100%;
 }
