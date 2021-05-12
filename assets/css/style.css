@@ -513,12 +513,28 @@ h6, .h6 {
   color: #0d6ae4;
 }
 .sns__icon.sns__icon--instagram {
-  background: -webkit-linear-gradient(#4f5bd5 2%, #962fbf 26%, #d62976 50%, #fa7e1e 74%, #feda75 98%);
+  background-color: #4f5bd5;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF4F5BD5', endColorstr='#FFFEDA75');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIyJSIgc3RvcC1jb2xvcj0iIzRmNWJkNSIvPjxzdG9wIG9mZnNldD0iMjYlIiBzdG9wLWNvbG9yPSIjOTYyZmJmIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNkNjI5NzYiLz48c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iI2ZhN2UxZSIvPjxzdG9wIG9mZnNldD0iOTglIiBzdG9wLWNvbG9yPSIjZmVkYTc1Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(2%, #4f5bd5), color-stop(26%, #962fbf), color-stop(50%, #d62976), color-stop(74%, #fa7e1e), color-stop(98%, #feda75));
+  background-image: -moz-linear-gradient(top, #4f5bd5 2%, #962fbf 26%, #d62976 50%, #fa7e1e 74%, #feda75 98%);
+  background-image: -webkit-linear-gradient(top, #4f5bd5 2%, #962fbf 26%, #d62976 50%, #fa7e1e 74%, #feda75 98%);
+  background-image: linear-gradient(to bottom, #4f5bd5 2%, #962fbf 26%, #d62976 50%, #fa7e1e 74%, #feda75 98%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .sns__icon.sns__icon--instagram:hover {
-  background: -webkit-linear-gradient(#3a48d0 2%, #862aab 26%, #c1256a 50%, #f97006 74%, #fed35c 98%);
+  background-color: #3a48d0;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF3A48D0', endColorstr='#FFFED35C');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIyJSIgc3RvcC1jb2xvcj0iIzNhNDhkMCIvPjxzdG9wIG9mZnNldD0iMjYlIiBzdG9wLWNvbG9yPSIjODYyYWFiIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNjMTI1NmEiLz48c3RvcCBvZmZzZXQ9Ijc0JSIgc3RvcC1jb2xvcj0iI2Y5NzAwNiIvPjxzdG9wIG9mZnNldD0iOTglIiBzdG9wLWNvbG9yPSIjZmVkMzVjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(2%, #3a48d0), color-stop(26%, #862aab), color-stop(50%, #c1256a), color-stop(74%, #f97006), color-stop(98%, #fed35c));
+  background-image: -moz-linear-gradient(top, #3a48d0 2%, #862aab 26%, #c1256a 50%, #f97006 74%, #fed35c 98%);
+  background-image: -webkit-linear-gradient(top, #3a48d0 2%, #862aab 26%, #c1256a 50%, #f97006 74%, #fed35c 98%);
+  background-image: linear-gradient(to bottom, #3a48d0 2%, #862aab 26%, #c1256a 50%, #f97006 74%, #fed35c 98%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

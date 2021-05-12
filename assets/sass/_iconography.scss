@@ -56,11 +56,15 @@
         }
     }
     &.sns__icon--instagram {
-        background: -webkit-linear-gradient($instagram-blue 2%, $instagram-purple 26%, $instagram-red 50%, $instagram-orange 74%, $instagram-yellow 98%);
+        background-color: $instagram-blue;
+        @include filter-gradient($instagram-blue, $instagram-yellow, vertical);
+        @include background-image(linear-gradient(top, $instagram-blue 2%, $instagram-purple 26%, $instagram-red 50%, $instagram-orange 74%, $instagram-yellow 98%));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         &:hover {
-            background: -webkit-linear-gradient(darken($instagram-blue, 5%) 2%, darken($instagram-purple, 5%) 26%, darken($instagram-red, 5%) 50%, darken($instagram-orange, 5%) 74%, darken($instagram-yellow, 5%) 98%);
+            background-color: darken($instagram-blue, 5%);
+            @include filter-gradient(darken($instagram-blue, 5%), darken($instagram-yellow, 5%), vertical);
+            @include background-image(linear-gradient(top, darken($instagram-blue, 5%) 2%, darken($instagram-purple, 5%) 26%, darken($instagram-red, 5%) 50%, darken($instagram-orange, 5%) 74%, darken($instagram-yellow, 5%) 98%));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
