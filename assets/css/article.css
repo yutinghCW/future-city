@@ -88,17 +88,17 @@ table tr th {
   clear: both;
 }
 @media screen and (max-width: 1023px) {
-  .article__label > div {
+  .article__label > * {
     font-size: 1rem;
   }
 }
-.article__label > div:last-child {
+.article__label > *:last-child {
   float: right;
 }
-.article__label > div:first-child {
+.article__label > *:first-child {
   float: left;
 }
-.article__label > div.label {
+.article__label > *.label {
   color: #3C00B4;
 }
 
