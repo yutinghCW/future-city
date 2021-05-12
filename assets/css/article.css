@@ -421,6 +421,7 @@ article .article__right {
 .article__body .more__btn {
   position: relative;
   padding-right: 1.375rem;
+  padding-bottom: 3px;
   color: #3C00B4;
   border-bottom: 1px dashed #3C00B4;
   cursor: pointer;
@@ -431,6 +432,7 @@ article .article__right {
   position: absolute;
   top: 50%;
   right: 2px;
+  margin-top: -1.5px;
   font-size: 1rem;
   font-family: "fc-icon";
   line-height: 1;
