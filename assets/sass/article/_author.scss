@@ -1,0 +1,53 @@
+.article__author {
+    margin: 35px -20px 0;
+    padding: 20px 30px;
+    font-size: 0;
+    background-color: $gray-100;
+    @media screen and (min-width: 1024px) {
+        margin-left: -30px;
+        margin-right: -30px;
+        padding: 25px 30px;
+    }
+    @media screen and (max-width: 1023px) {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    > * {
+        display: block;
+        vertical-align: middle;
+        @media screen and (min-width: 1024px) {
+            display: inline-block;
+        }
+    }
+    .author__img {
+        width: 100px;
+        @include border-radius(50%);
+        overflow: hidden;
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 10px;
+        }
+        img {
+            @include transition(transform 0.5s cubic-bezier(0.35, 0.7, 1, 1));
+        }
+        &:hover {
+            img {
+                @include scale(1.05);
+            }
+        }
+    }
+    .author__text {
+        @media screen and (min-width: 1024px) {
+            width: calc(100% - 100px);
+            padding-right: 40px;
+        }
+        .h3 {
+            display: block;
+            font-weight: 600;
+            @media screen and (max-width: 1023px) {
+                text-align: center;
+            }
+        }
+    }
+}

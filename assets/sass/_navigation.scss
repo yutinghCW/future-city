@@ -1,6 +1,5 @@
 nav#menu {
     display: none;
-    position: absolute;
     left: 0;
     width: 100%;
     padding-top: 30px;
@@ -8,48 +7,96 @@ nav#menu {
     font-size: 0;
     background-color: $primary;
     z-index: 2;
-    ul {
-        vertical-align: text-top;
-        @include list(0, 0, none);
-        line-height: 1.5;
+    @media screen and (min-width: 768px) {
+        position: absolute;
+    }
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-top: 70px;
+        overflow: hidden scroll;
+    }
+    .icon-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: $white;
+        font-size: $fs20;
         @media screen and (min-width: 768px) {
-            display: inline-block;
-            width: 20%;
+            display: none;
         }
-        @media screen and (max-width: 767px) {
-            + ul {
-                margin-top: 20px;
-            }
+    }
+    .search {
+        @media screen and (min-width: 768px) {
+            display: none;
         }
-        .h4 {
-            color: $white;
-            font-weight: 600;
+        form {
+            border-bottom: 1px solid $white;
         }
-        li {
-            width: 33.3333330%;
-            @media screen and (min-width: 500px) {
-                width: 25%;
-            }
-            @media screen and (min-width: 650px) {
+    }
+    .menu {
+        ul {
+            vertical-align: text-top;
+            @include list(0, 0, none);
+            line-height: 1.5;
+            @media screen and (min-width: 768px) {
+                display: inline-block;
                 width: 20%;
             }
-            @media screen and (min-width: 768px) {
-                width: 100%;
-            }
             @media screen and (max-width: 767px) {
-                display: inline-block;
+                + ul {
+                    margin-top: 20px;
+                }
             }
-            a {
-                display: block;
-                padding: $fs13;
+            .h4 {
                 color: $white;
-                font-size: $fs16;
-                text-align: center;
-                &:hover {
-                    background-color: $primary-lighten;
+                font-weight: 600;
+            }
+            li {
+                width: 33.3333330%;
+                @media screen and (min-width: 500px) {
+                    width: 25%;
+                }
+                @media screen and (min-width: 650px) {
+                    width: 20%;
                 }
                 @media screen and (min-width: 768px) {
-                    padding: $fs18;
+                    width: 100%;
+                }
+                @media screen and (max-width: 767px) {
+                    display: inline-block;
+                }
+                a {
+                    display: block;
+                    padding: $fs13;
+                    color: $white;
+                    font-size: $fs16;
+                    text-align: center;
+                    &:hover {
+                        background-color: $primary-lighten;
+                    }
+                    @media screen and (min-width: 768px) {
+                        padding: $fs18;
+                    }
+                }
+            }
+        }
+    }
+    .sns {
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+        ul {
+            border-top: 1px solid $white;
+            > li {
+                > a {
+                    color: $white;
+                    -webkit-background-clip: initial;
+                    -webkit-text-fill-color: initial;
+                    background: none;
                 }
             }
         }

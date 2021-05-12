@@ -53,6 +53,9 @@
                 }
                 &.h4 {
                     text-align: left;
+                    @media screen and (max-width: 767px) {
+                        @include lineclamp(2);
+                    }
                 }
                 &.h5 {
                     @include lineclamp(3);
@@ -107,15 +110,31 @@
                 display: inline-block;
                 vertical-align: middle;
             }
+            @media screen and (max-width: 1023px) {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
         }
         .card__image {
             width: 100px;
         }
         .card__text {
             width: calc(100% - 100px);
-            padding-left: 10px;
+            @media screen and (min-width: 1024px) {
+                padding-left: 10px;
+            }
+            @media screen and (max-width: 1023px) {
+                padding-left: 0;
+                padding-right: 20px;
+            }
             > a.btn.h5 {
                 -webkit-line-clamp: 2;
+            }
+        }
+        .icon-arrow-right {
+            @media screen and (min-width: 1024px) {
+                display: none;
             }
         }
     }

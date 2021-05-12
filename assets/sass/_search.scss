@@ -44,6 +44,7 @@
     }
 }
 .search__group--white {
+    background-color: $white;
     border: 1px solid $gray-100;
     @include transition(border 0.3s);
     &.focus {

@@ -1,0 +1,23 @@
+body.scroll--up {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+ul.article__share {
+    &.show {
+        display: block;
+        &.next--show {
+            bottom: 110px;
+        }
+    }
+}
+
+.article__next {
+    &.show {
+        @include translateY(0%);
+    }
+}

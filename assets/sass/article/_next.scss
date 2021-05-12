@@ -1,4 +1,32 @@
 .article__next {
+    @include transition(transform 0.3s);
+    @media screen and (min-width: 1024px) {
+        position: -webkit-sticky;
+        position: sticky;
+        top: calc(50% - 155px);
+    }
+    @media screen and (max-width: 1023px) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 15px 30px;
+        background-color: $gray-100;
+        border-top: 1px solid $gray-200;
+        @include translateY(100%);
+        z-index: 1;
+        h4 {
+            display: none;
+        }
+        .card__group--next {
+            .card__item {
+                padding-bottom: 0;
+                + .card__item {
+                    display: none;
+                }
+            }
+        }
+    }
     h4 {
         padding-left: 10px;
         line-height: 1.25;

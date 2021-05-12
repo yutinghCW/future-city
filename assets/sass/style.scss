@@ -22,11 +22,14 @@
 @import "_cookies";
 @import "_header";
 @import "_navigation";
+@import "_footer";
+@import "_ad";
 @import "_pagination";
 @import "_keyword";
-@import "_footer";
 
 hr {
 	border: solid $gray-200;
     border-width: 1px 0 0;
 }
+
+@import "_scrollup";
