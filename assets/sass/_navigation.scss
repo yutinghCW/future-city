@@ -109,6 +109,7 @@ nav#menu {
     left: 0;
     width: 100%;
     background-color: $primary;
+    z-index: 2;
     .container {
         > * {
             max-width: 700px;
