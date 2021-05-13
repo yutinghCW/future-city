@@ -1,0 +1,15 @@
+@import "_mixin";
+@import "_variables";
+@import "_color";
+
+.author__block {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    .author__img {
+        width: 100px;
+        @include border-radius(50%);
+        overflow: hidden;
+        -webkit-mask-image: -webkit-radial-gradient($gray-100, $gray-100);
+    }
+}

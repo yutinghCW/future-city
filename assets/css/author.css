@@ -1,0 +1,15 @@
+.author__block {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.author__block .author__img {
+  width: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(#F0F0F0, #F0F0F0);
+}
+
+/*# sourceMappingURL=author.css.map */
