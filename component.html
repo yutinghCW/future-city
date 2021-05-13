@@ -100,7 +100,16 @@
         </div>
     </section>
     <nav id="menu">
-        <div class="container">
+        <i id="btn-close-nav" class="icon icon-close"></i>
+        <div class="container search">
+            <form class="form pb-30 mb-30" action="#!" method="post">
+                <div class="search__group search__group--white">
+                    <input type="email" class="search__input" placeholder="請輸入關鍵字">
+                    <button type="submit" class="search__submit"><i class="icon icon-search"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="container menu">
             <ul>
                 <div class="h4 text-sm-center mt-0 mb-5">AI科技</div>
                 <li><a href="#!">智慧醫療</a></li>
@@ -131,7 +140,23 @@
                 <li><a href="#!">關於我們</a></li>
             </ul>
         </div>
-        <div class="container"></div>
+        <div class="container sns">
+            <ul class="sns__group mt-30 pt-30 pb-40">
+                <li>
+                    <a class="sns__icon sns__icon--facebook tooltip tooltip-bottom" data-tooltip="追蹤未來城市粉絲團" href="#!" target="_blank" rel="noopener noreferrer">
+                        <i class="icon icon-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="sns__icon sns__icon--instagram tooltip tooltip-bottom" data-tooltip="追蹤未來城市instagram" href="#!" target="_blank" rel="noopener noreferrer">
+                        <i class="icon icon-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <button class="btn btn--small btn--outlined btn--white">訂閱電子報</button>
+                </li>
+            </ul>
+        </div>
     </nav>
     <main>
         <div class="container">

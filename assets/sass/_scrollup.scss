@@ -5,6 +5,10 @@ body.scroll--up {
         left: 0;
         right: 0;
     }
+    nav#menu, .search__block {
+        position: fixed;
+        top: 77px;
+    }
 }
 
 ul.article__share {

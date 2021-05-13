@@ -4901,6 +4901,10 @@ body.scroll--up header {
   left: 0;
   right: 0;
 }
+body.scroll--up nav#menu, body.scroll--up .search__block {
+  position: fixed;
+  top: 77px;
+}
 
 ul.article__share.show {
   display: block;
