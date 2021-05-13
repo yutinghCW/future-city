@@ -3,12 +3,14 @@
     padding: 20px 30px;
     font-size: 0;
     background-color: $gray-100;
+    @media screen and (min-width: 768px) {
+        padding: 25px 30px;
+    }
     @media screen and (min-width: 1024px) {
         margin-left: -30px;
         margin-right: -30px;
-        padding: 25px 30px;
     }
-    @media screen and (max-width: 1023px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         flex-wrap: wrap-reverse;
         align-items: center;
@@ -17,7 +19,7 @@
     > * {
         display: block;
         vertical-align: middle;
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 768px) {
             display: inline-block;
         }
     }
@@ -25,7 +27,8 @@
         width: 100px;
         @include border-radius(50%);
         overflow: hidden;
-        @media screen and (max-width: 1023px) {
+        -webkit-mask-image: -webkit-radial-gradient($gray-100, $gray-100);
+        @media screen and (max-width: 767px) {
             margin-bottom: 10px;
         }
         img {
@@ -38,14 +41,14 @@
         }
     }
     .author__text {
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 768px) {
             width: calc(100% - 100px);
             padding-right: 40px;
         }
         .h3 {
             display: block;
             font-weight: 600;
-            @media screen and (max-width: 1023px) {
+            @media screen and (max-width: 767px) {
                 text-align: center;
             }
         }
