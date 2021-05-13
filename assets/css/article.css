@@ -102,6 +102,25 @@ table tr th {
   color: #3C00B4;
 }
 
+.article__detail::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.article__detail .detail__upload {
+  float: left;
+}
+.article__detail .detail__upload > * {
+  font-weight: normal;
+}
+.article__detail .detail__view {
+  float: right;
+}
+.article__detail .detail__view > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 ul.article__share {
   margin: 0;
   padding: 0;

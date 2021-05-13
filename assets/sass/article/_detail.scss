@@ -1,0 +1,18 @@
+.article__detail {
+    &::after {
+        @include clear;
+    }
+    .detail__upload {
+        float: left;
+        > * {
+            font-weight: normal;
+        }
+    }
+    .detail__view {
+        float: right;
+        > * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
