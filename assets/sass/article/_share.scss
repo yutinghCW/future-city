@@ -11,6 +11,7 @@ ul.article__share {
         display: none;
     }
     li {
+        position: relative;
         margin-top: 5px;
         color: $gray-300;
         @media screen and (min-width: 1024px) {
@@ -21,10 +22,12 @@ ul.article__share {
                 display: none;
             }
         }
-        a {
+        a, button {
             display: inline-block;
             padding: $fs14;
             color: $white;
+            background-color: transparent;
+            border: 0;
             @include border-radius(50px);
             @media screen and (min-width: 1024px) {
                 padding: $fs12/2 $fs14;
@@ -50,8 +53,10 @@ ul.article__share {
                 }
             }
             &:hover {
-                color: $primary-variant;
-                border-color: $primary-variant;
+                @media screen and (min-width: 1024px) {
+                    color: $primary-variant;
+                    border-color: $primary-variant;
+                }
             }
         }
         &.share--facebook {
@@ -59,15 +64,33 @@ ul.article__share {
                 display: none;
             }
         }
-        &.share--line a {
-            @media screen and (max-width: 1023px) {
-                background-color: $line;
+        &.share--line {
+            a, button {
+                @media screen and (max-width: 1023px) {
+                    background-color: $line;
+                }
             }
         }
-        &.share--copy a {
-            @media screen and (max-width: 1023px) {
-                background-color: $primary;
+        &.share--copy {
+            a, button {
+                @media screen and (max-width: 1023px) {
+                    background-color: $primary;
+                }
             }
         }
+    }
+    #copy__input {
+        position: fixed;
+        top: -10px;
+        left: -10px;
+        width: 5px;
+        height: 5px;
+        padding: 0;
+        color: $white;
+        font-size: $fs12;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        z-index: -1;
     }
 }

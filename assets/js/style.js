@@ -1,3 +1,14 @@
+function clipboard() {
+    var copyText = document.getElementById("copy__input");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    $('#copied').fadeIn();
+    setTimeout(function(){
+        $('#copied').fadeOut();
+    }, 2000)
+}
+
 $(function(){
     var width = $(window).width();
     var height = $(window).height();
