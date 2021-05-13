@@ -4967,7 +4967,7 @@ body.scroll--up nav#menu, body.scroll--up .search__block {
   position: fixed;
 }
 @media screen and (max-width: 767px) {
-  body.scroll--up nav#menu, body.scroll--up .search__block {
+  body.scroll--up .search__block {
     top: 77px;
   }
 }

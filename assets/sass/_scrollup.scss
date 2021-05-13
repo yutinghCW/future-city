@@ -7,6 +7,8 @@ body.scroll--up {
     }
     nav#menu, .search__block {
         position: fixed;
+    }
+    .search__block {
         @media screen and (max-width: 767px) {
             top: 77px;
         }
