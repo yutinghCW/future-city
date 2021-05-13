@@ -4116,11 +4116,12 @@ a.text__link--white {
 .message .message__container {
   position: relative;
 }
-.message .message__container .icon {
+.message .message__container .message__close {
   position: absolute;
   top: 0;
   right: -10px;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 .message .message__container p span {
   display: inline-block;
@@ -4136,6 +4137,7 @@ a.text__link--white {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 4;
 }
 .message.message--dialogs {
   max-width: 480px;
@@ -4157,6 +4159,21 @@ a.text__link--white {
 .message.message--notification p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.message__black {
+  position: fixed;
+  background-color: #000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+  cursor: pointer;
+  z-index: 3;
+}
+.message__black.opened {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .card__group {

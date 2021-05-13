@@ -37,6 +37,14 @@ $(function(){
         $('#menu').slideUp();
         $('#btn-hamburger').removeClass('icon-close');
     });
+    $('#btn-newsletter').on('click', function() {
+        $('#newsletter').show();
+        $('.message__black').addClass('opened');
+    });
+    $('.message__close, .message__black').on('click', function() {
+        $('.message').hide();
+        $('.message__black').removeClass('opened');
+    });
 
     var scrollableElement = document.body; //document.getElementById('scrollableElement');
     scrollableElement.addEventListener('wheel', checkScrollDirection);
