@@ -4829,7 +4829,7 @@ footer > .container > span:last-child {
   width: 320px !important;
   height: 50px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .advertisement.advertisement--970by250 img {
     width: 970px !important;
     height: 250px;
