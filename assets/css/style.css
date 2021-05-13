@@ -4924,7 +4924,11 @@ body.scroll--up header {
 }
 body.scroll--up nav#menu, body.scroll--up .search__block {
   position: fixed;
-  top: 77px;
+}
+@media screen and (max-width: 767px) {
+  body.scroll--up nav#menu, body.scroll--up .search__block {
+    top: 77px;
+  }
 }
 
 ul.article__share.show {
