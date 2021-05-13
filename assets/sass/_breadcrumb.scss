@@ -11,10 +11,12 @@ ul.breadcrumb {
                 font-size: $fs14;
             }
         }
-        a {
+        > * {
             display: inline-block;
             color: $black;
             font-size: $fs14;
+        }
+        a {
             &:hover {
                 color: $primary-variant;
                 text-decoration: underline;

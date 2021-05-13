@@ -19,11 +19,24 @@
 @import "_message";
 @import "_card";
 
+.section__title {
+    text-align: center;
+    &::after {
+        @include beforeafter('', block);
+        width: 110px;
+        height: 5px;
+        margin: 5px auto 30px;
+        background-color: $primary;
+        @include border-radius(5px);
+    }
+}
+
 @import "_cookies";
 @import "_header";
 @import "_navigation";
 @import "_footer";
 @import "_ad";
+@import "_breadcrumb";
 @import "_pagination";
 @import "_keyword";
 

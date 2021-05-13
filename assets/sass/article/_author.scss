@@ -24,20 +24,9 @@
         }
     }
     .author__img {
-        width: 100px;
-        @include border-radius(50%);
-        overflow: hidden;
-        -webkit-mask-image: -webkit-radial-gradient($gray-100, $gray-100);
+        @include circleimg(100px);
         @media screen and (max-width: 767px) {
             margin-bottom: 10px;
-        }
-        img {
-            @include transition(transform 0.5s cubic-bezier(0.35, 0.7, 1, 1));
-        }
-        &:hover {
-            img {
-                @include scale(1.05);
-            }
         }
     }
     .author__text {

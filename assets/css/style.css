@@ -4515,6 +4515,21 @@ a.text__link--white {
   -webkit-line-clamp: 2;
 }
 
+.section__title {
+  text-align: center;
+}
+.section__title::after {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 5px;
+  margin: 5px auto 30px;
+  background-color: #3C00B4;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
 .cookies {
   position: fixed;
   bottom: 0;
@@ -4838,6 +4853,32 @@ footer > .container > span:last-child {
 .advertisement.advertisement--300by250 img {
   width: 300px !important;
   height: 250px;
+}
+
+ul.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+ul.breadcrumb li {
+  display: inline-block;
+}
+ul.breadcrumb li + li::before {
+  content: ">";
+  display: inline-block;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  font-size: 0.875rem;
+}
+ul.breadcrumb li > * {
+  display: inline-block;
+  color: #000;
+  font-size: 0.875rem;
+}
+ul.breadcrumb li a:hover {
+  color: #25006E;
+  text-decoration: underline;
 }
 
 .pagination {

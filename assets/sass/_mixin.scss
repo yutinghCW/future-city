@@ -53,3 +53,19 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+@mixin circleimg($width) {
+    width: 100px;
+    @include border-radius(50%);
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient($gray-100, $gray-100);
+    img {
+        width: 100%;
+        @include transition(transform 0.5s cubic-bezier(0.35, 0.7, 1, 1));
+    }
+    &:hover {
+        img {
+            @include scale(1.05);
+        }
+    }
+}
