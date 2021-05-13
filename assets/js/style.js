@@ -9,6 +9,12 @@ function clipboard() {
     }, 2000)
 }
 
+function focusInput() {
+    setTimeout(function(){
+        document.getElementById("searchInput").focus();
+    }, 500)
+}
+
 $(function(){
     var width = $(window).width();
     var height = $(window).height();
