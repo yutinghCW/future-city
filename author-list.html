@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta meta name="format-detection" content="telephone=no, email=no, adress=no">
+	<title>專欄作家 - 未來城市@天下</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/author.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="btn-hamburger" class="hamburger"><span></span><span></span><span></span></div>
+			<div id="btn-search" class="icon icon-search" onclick="focusInput()"></div>
+			<a href="#!" class="logo">
+				<img src="assets/images/logo.svg" alt="">
+			</a>
+			<button id="btn-newsletter" class="btn btn--small btn--outlined btn--black">訂閱電子報</button>
+			<ul class="sns__group">
+				<li>
+					<a class="sns__icon sns__icon--facebook tooltip tooltip-bottom" data-tooltip="追蹤未來城市粉絲團" href="#!" target="_blank" rel="noopener noreferrer">
+						<i class="icon icon-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a class="sns__icon sns__icon--instagram tooltip tooltip-bottom" data-tooltip="追蹤未來城市instagram" href="#!" target="_blank" rel="noopener noreferrer">
+						<i class="icon icon-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a class="sns__icon sns__icon--default tooltip tooltip-bottom" data-tooltip="註冊或登入會員" href="#!" target="_blank" rel="noopener noreferrer">
+						<i class="icon icon-user-filled"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<section id="search" class="search__block">
+		<div class="container py-30">
+			<form class="form" action="#!" method="post">
+				<div class="search__group search__group--white">
+					<input id="searchInput" type="email" class="search__input" placeholder="請輸入關鍵字" autofocus>
+					<button type="submit" class="search__submit"><i class="icon icon-search"></i></button>
+				</div>
+			</form>
+			<h5 class="mt-20 mb-5">熱門關鍵字</h5>
+			<ul class="keyword keyword--white">
+				<li>
+					<a href="#!">
+						#台北市
+					</a>
+				</li>
+				<li>
+					<a href="#!">
+						#城市治理
+					</a>
+				</li>
+				<li>
+					<a href="#!">
+						#數位政府
+					</a>
+				</li>
+				<li>
+					<a href="#!">
+						#數位轉型
+					</a>
+				</li>
+				<li>
+					<a href="#!">
+						#智慧城市
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<nav id="menu">
+		<i id="btn-close-nav" class="icon icon-close"></i>
+		<div class="container search">
+			<form class="form pb-30 mb-30" action="#!" method="post">
+				<div class="search__group search__group--white">
+					<input type="email" class="search__input" placeholder="請輸入關鍵字">
+					<button type="submit" class="search__submit"><i class="icon icon-search"></i></button>
+				</div>
+			</form>
+		</div>
+		<div class="container menu">
+			<ul>
+				<div class="h4 text-sm-center mt-0 mb-5">AI科技</div>
+				<li><a href="#!">智慧醫療</a></li>
+				<li><a href="#!">智慧製造</a></li>
+				<li><a href="#!">智慧交通</a></li>
+				<li><a href="#!">智慧建築</a></li>
+				<li><a href="#!">智慧金融</a></li>
+				<li><a href="#!">智慧隱私</a></li>
+			</ul>
+			<ul>
+				<div class="h4 text-sm-center mt-0 mb-5">城市治理</div>
+				<li><a href="#!">地方創生</a></li>
+				<li><a href="#!">多元平權</a></li>
+			</ul>
+			<ul>
+				<div class="h4 text-sm-center mt-0 mb-5">設計美學</div>
+				<li><a href="#!">政府美學</a></li>
+				<li><a href="#!">社會設計</a></li>
+			</ul>
+			<ul>
+				<div class="h4 text-sm-center mt-0 mb-5">永續發展</div>
+				<li><a href="#!">SDGs</a></li>
+			</ul>
+			<ul>
+				<div class="h4 text-sm-center mt-0 mb-5">其他</div>
+				<li><a href="#!">深度專題</a></li>
+				<li><a href="#!">專欄作者</a></li>
+				<li><a href="#!">關於我們</a></li>
+			</ul>
+		</div>
+		<div class="container sns">
+			<ul class="sns__group mt-30 pt-30 pb-40">
+				<li>
+					<a class="sns__icon sns__icon--facebook tooltip tooltip-bottom" data-tooltip="追蹤未來城市粉絲團" href="#!" target="_blank" rel="noopener noreferrer">
+						<i class="icon icon-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a class="sns__icon sns__icon--instagram tooltip tooltip-bottom" data-tooltip="追蹤未來城市instagram" href="#!" target="_blank" rel="noopener noreferrer">
+						<i class="icon icon-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<button class="btn btn--small btn--outlined btn--white">訂閱電子報</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<main class="py-20">
+		<div class="container">
+			<nav aria-label="breadcrumb" class="mb-20">
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+					<li class="breadcrumb-item"><span>專欄作家</span></li>
+				</ul>
+			</nav>
+			<div class="card__group card__group--author card__group--master">
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/202011/writer-5fbca6ed4a73c.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">陳潔如</a>
+						<p class="h5 btn btn--text btn--black">
+							自2008年從外商轉戰社會企業，投身台灣第一家社企「若水國際」，10年來從創投到創業，致力在科技產業中，為身障就業發展「永續」且「規模化」的商業模式。2012年創立全球第一家社企型的BIM技術服務團隊，2018年打造若水AI數據處理服務事業部，讓身障者成為數位經濟工作者，實踐 Tech for Good的理想與願景。
+						</p>
+					</div>
+					<div class="card__news">
+						<div class="card__text">
+							<a href="#!" class="h6 btn btn--text btn--primary">智慧醫療</a>
+							<a href="#!" class="h5 btn btn--text btn--black">明朝的劍斬清朝的官？台大醫院院長吳明賢：醫療法規過時，防弊多於興利｜客座總編輯2</a>
+						</div>
+						<a href="#!" class="card__image card__image--3by2">
+							<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/article/202104/article-606d86c5c6bd4.jpg" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/202007/writer-5f088fd1f3df6.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">余明勳</a>
+						<p class="h5 btn btn--text btn--black">
+							台東縣政府交通及觀光發展處處長，逢甲資訊工程研究所碩士。 專長領域：人工智慧、線控系統、電子書、資訊管理及創新應用、互動電視、手機支付、數位內容等。
+						</p>
+					</div>
+					<div class="card__news">
+						<div class="card__text">
+							<a href="#!" class="h6 btn btn--text btn--primary">城市治理</a>
+							<a href="#!" class="h5 btn btn--text btn--black">熱氣球嘉年華登場！台東如何複製「金城武樹」旅遊模式，讓10萬人來10次？</a>
+						</div>
+						<a href="#!" class="card__image card__image--3by2">
+							<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/article/202007/article-5f0954db5e160.jpg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="card__group card__group--author pt-40 pt-sm-80 pb-sm-60">
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/202011/writer-5fbca6ed4a73c.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">陳潔如</a>
+						<p class="h5 btn btn--text btn--black">
+							自2008年從外商轉戰社會企業，投身台灣第一家社企「若水國際」，10年來從創投到創業，致力在科技產業中，為身障就業發展「永續」且「規模化」的商業模式。2012年創立全球第一家社企型的BIM技術服務團隊，2018年打造若水AI數據處理服務事業部，讓身障者成為數位經濟工作者，實踐 Tech for Good的理想與願景。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201905/writer-5ccfec5a5dd8f.gif" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">曹世綸</a>
+						<p class="h5 btn btn--text btn--black">
+							SEMI國際半導體產業協會全球行銷長暨台灣區總裁，擁有台灣大學資訊科技管理EMBA、美國紐約市立大學柏魯克分校行銷企管碩士等學位，曾任職李奧貝納、奧美廣告、遠傳電信、IDC台灣區董事總經理、趨勢科技亞太區行銷協理，有超過25年的廣告行銷資歷，擅長科技產業研究調查與趨勢分析、企業品牌行銷策略、公協會及企業經營管理。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201905/writer-5ce0e6c77e25f.png" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">科技島讀</a>
+						<p class="h5 btn btn--text btn--black">
+							科技島讀是一個提供「科技商業策略」的付費訂閱制媒體。每週提供 3 篇文章及 1 則音頻，內容涵蓋技術、商業、策略、管理、媒體、創業以及受科技影響的政治文化，觀點條理清晰，文筆深入淺出。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201901/writer-5c414f79a25d5.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">未來城市編輯部</a>
+						<p class="h5 btn btn--text btn--black">
+							《未來城市》是《天下》於2018年推出的智慧科技與設計交流平台。 ​​透過報導智慧城市、社會設計、專家洞察，期望成為一個提供市民、企業和政府單位對話的平台。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/202007/writer-5efd9255d42cc.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">吳俊彥</a>
+						<p class="h5 btn btn--text btn--black">
+							日本關西大學國際部助理教授，關注社會、城市與企業之永續發展議題。曾任職於西門子、奇異公司與瑞士信貸銀行。畢業於台大土木系、美國麻省理工學院，英國劍橋大學工商管理碩士（MBA），日本京都大學經濟學博士。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201901/writer-5c3e9330d65ae.png" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">天下雜誌編輯部</a>
+						<p class="h5 btn btn--text btn--black">
+							《天下雜誌》創刊於1981年6月，是台灣第一本專業的新聞財經雜誌。天下雜誌每日精選財經、國際、管理、教育、經濟學人、評論、時尚；互動圖表、影音等多媒體報導，深入解讀世界脈動，掌握前瞻觀念。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201808/writer-5b84b214adc73.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">李友專</a>
+						<p class="h5 btn btn--text btn--black">
+							是位具有醫學資訊研究所教授頭銜的皮膚科主治醫師。初中時父親買回一台電腦Golden II開始寫程式，而後進入醫學系，實現了IT技術和臨床醫學的完美融合。 2010年10月當選美國醫學資訊領域最高學術榮譽委員會美國醫學資訊學院（ACMI）院士，成為唯一一位來自亞洲的院士，被稱為台灣醫學資訊之父。 
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201909/writer-5d7a36de1b92b.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">侯友宜</a>
+						<p class="h5 btn btn--text btn--black">
+							新北市市長。中央警察大學犯罪防治研究所博士，曾任新北市副市長、中央警察大學校長、內政部警政署署長等。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201909/writer-5d8b8c1e8f1cf.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">張耿華</a>
+						<p class="h5 btn btn--text btn--black">
+							豪華朗機工團長、豪華朗機工共同創辦人。曾獲2019年總統文化獎青年創意獎、2018年「臺中世界花卉博覽會-聆聽花開的聲音」計畫主持人、2017年「世界大學運動會-聖火台」藝術總監。「豪華朗機工」是四個藝術家「跨域」「共創」的成果，我們在彼此之間尋找「關係」，給彼此框架，卻用「想像力」創造最大的自由度。我們不是一個不會失敗的團隊，只是我們知道該如何「換位思考」，「在有限的框架下展現最大的自由度」。每個人進化速度不一樣，透過「調頻」調出彼此最佳的狀態及溝通模式，哪怕過程很困難，如細菌般的我們適應環境的能力持續混種突變，我們帶著這樣的主張繼續跟不同的人或組織混種。（攝影/導演王志成）
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/202011/writer-5fbca6ed4a73c.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">陳潔如</a>
+						<p class="h5 btn btn--text btn--black">
+							自2008年從外商轉戰社會企業，投身台灣第一家社企「若水國際」，10年來從創投到創業，致力在科技產業中，為身障就業發展「永續」且「規模化」的商業模式。2012年創立全球第一家社企型的BIM技術服務團隊，2018年打造若水AI數據處理服務事業部，讓身障者成為數位經濟工作者，實踐 Tech for Good的理想與願景。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201905/writer-5ccfec5a5dd8f.gif" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">曹世綸</a>
+						<p class="h5 btn btn--text btn--black">
+							SEMI國際半導體產業協會全球行銷長暨台灣區總裁，擁有台灣大學資訊科技管理EMBA、美國紐約市立大學柏魯克分校行銷企管碩士等學位，曾任職李奧貝納、奧美廣告、遠傳電信、IDC台灣區董事總經理、趨勢科技亞太區行銷協理，有超過25年的廣告行銷資歷，擅長科技產業研究調查與趨勢分析、企業品牌行銷策略、公協會及企業經營管理。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201905/writer-5ce0e6c77e25f.png" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">科技島讀</a>
+						<p class="h5 btn btn--text btn--black">
+							科技島讀是一個提供「科技商業策略」的付費訂閱制媒體。每週提供 3 篇文章及 1 則音頻，內容涵蓋技術、商業、策略、管理、媒體、創業以及受科技影響的政治文化，觀點條理清晰，文筆深入淺出。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201901/writer-5c414f79a25d5.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">未來城市編輯部</a>
+						<p class="h5 btn btn--text btn--black">
+							《未來城市》是《天下》於2018年推出的智慧科技與設計交流平台。 ​​透過報導智慧城市、社會設計、專家洞察，期望成為一個提供市民、企業和政府單位對話的平台。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/202007/writer-5efd9255d42cc.jpg" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">吳俊彥</a>
+						<p class="h5 btn btn--text btn--black">
+							日本關西大學國際部助理教授，關注社會、城市與企業之永續發展議題。曾任職於西門子、奇異公司與瑞士信貸銀行。畢業於台大土木系、美國麻省理工學院，英國劍橋大學工商管理碩士（MBA），日本京都大學經濟學博士。
+						</p>
+					</div>
+				</div>
+				<div class="card__item">
+					<a href="#!" class="card__image card__image--1by1">
+						<img src="https://storage.googleapis.com/futurecity-cms-cwg-tw/writer/201901/writer-5c3e9330d65ae.png" alt="">
+					</a>
+					<div class="card__text">
+						<a href="#!" class="h3 btn btn--text btn--black text-center">天下雜誌編輯部</a>
+						<p class="h5 btn btn--text btn--black">
+							《天下雜誌》創刊於1981年6月，是台灣第一本專業的新聞財經雜誌。天下雜誌每日精選財經、國際、管理、教育、經濟學人、評論、時尚；互動圖表、影音等多媒體報導，深入解讀世界脈動，掌握前瞻觀念。
+						</p>
+					</div>
+				</div>
+			</div>
+			<nav aria-label="Page navigation" class="text-center pt-sm-10 pt-60 pb-40">
+				<ul class="pagination">
+					<li class="page-item disabled">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true"><i class="icon icon-arrow-left"></i></span>
+							<span class="sr-only">上一頁</span>
+						</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item active"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">...</li>
+					<li class="page-item"><a class="page-link" href="#">7</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true"><i class="icon icon-arrow-right"></i></span>
+							<span class="sr-only">下一頁</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</main>
+	<footer>
+		<div class="container text-sm-center mb-15">
+			<a href="https://www.cw.com.tw/privacy" class="text__link--white px-md-20 pr-xs-20 pr-10" target="_blank" rel="noopener noreferrer">隱私權政策</a>
+			<a href="https://www.cw.com.tw/copyright" class="text__link--white px-md-20 pl-xs-20 pr-xs-20 pl-10 pr-10" target="_blank" rel="noopener noreferrer">著作權聲明</a>
+			<a href="https://member.cwg.tw/register-rule" class="text__link--white px-md-20 pl-xs-20 pl-10" target="_blank" rel="noopener noreferrer">會員服務條款</a>
+		</div>
+		<div class="container text-sm-center">
+			<span>
+				<span>讀者服務專線：886-2-2662-0332</span>
+				<span>傳真電話：886-2-2662-6048</span>
+				<span>聯絡信箱：futurecity@cw.com.tw</span>
+				<span>服務時間：週一～週五：09:00~17:30</span>
+			</span>
+			<span>
+				Copyright © 2021 天下雜誌. All rights reserved. 版權所有，禁止擅自轉貼節錄
+			</span>
+		</div>
+	</footer>
+	<div id="newsletter" class="message message--dialogs message--center" style="display: none;">
+		<div class="message__container">
+			<i class="icon icon-close message__close"></i>
+			<div class="message__txt text-center">
+				<h3 class="mt-0 mb-0 pb-5">未來城市@天下電子報</h3>
+				<p class="mt-0 mb-15">創造進步城市的新想像</p>
+			</div>
+			<div class="form">
+				<input type="email" class="form__input w--100" placeholder="請輸入關鍵字">
+				<div class="form__helper form__helper--highlight">　</div>
+				<div class="form__helper">本電子報內容涵蓋文章、活動、訂閱及贊助相關訊息，如您欲了解更多，體驗天下雜誌「未來城市」，歡迎您點選右上角「加入會員」或點閱官網。如您不想收到電子報內容，您可以透過電子報內的「取消訂閱」功能取消。</div>
+			</div>
+			<div class="message__btn pt-5 mt-10 text-center">
+				<a href="#!" class="btn btn--contained btn--primary btn--standard btn--wide">立即訂閱</a>
+			</div>
+		</div>
+	</div>
+	<div class="message__black"></div>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="assets/js/style.js"></script>
+</body>
+</html>
