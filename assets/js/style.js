@@ -65,20 +65,47 @@ $(function(){
             console.log('d');
         }
     });
-    $('#btn-newsletter, .message__close, .touch__close--black').on('click', function() {
+    $('#btn-newsletter, #btn-newsletter-m, .message__close, .touch__close--black').on('click', function() {
         $('#search, #menu').slideUp();
         $('#btn-hamburger').removeClass('icon-close');
         $('#btn-search').removeClass('icon-close').addClass('icon-search');
         hamClick = 0;
         searchClick = 0;
     });
-    $('#btn-newsletter').on('click', function() {
+    $('#btn-newsletter, #btn-newsletter-m').on('click', function() {
         $('#newsletter').show();
         $('.touch__close--black').addClass('opened');
         $('body, header').addClass('opened');
     });
     $('.message__close, .touch__close--black').on('click', function() {
-        $('.message').hide();
+        $(this).parent().parent('.message').hide();
         $('body, header, .touch__close--black').removeClass('opened');
+    });
+    $('.btn__close').on('click', function() {
+        $(this).parent().parent().parent('.message').hide();
+        $('body, header, .touch__close--black').removeClass('opened');
+    });
+
+    // 判斷 button 是否 disabled
+    $('#newsletter-input').on('change keyup copy paste cut', function() {
+        if (!this.value) {
+            $(this).siblings().attr('disabled', true);
+        } else {
+            $(this).siblings().attr('disabled', false);
+        }
+    });
+    // 判斷 mail 格式及隱私權後，是否繼續 form
+    $('#newsletter-submit').on('click', function() {
+        var mail = /([A-Z0-9a-z_-][^@])+?@[^$#<>?]+?\.[\w]{2,4}/.test($(this).siblings('input').val());
+        if(!mail) {
+            $(this).parent('.form').addClass('form--error');
+            $(this).siblings('.form__helper--highlight').text('您填寫的 e-mail 格式有誤');
+            return false;
+        } else {
+            $(this).parent('.form').removeClass('form--error');
+            $(this).siblings('.form__helper--highlight').text('　');
+            $('#newsletter').hide();
+            $('#newsletter-conform').show();
+        }
     });
 });
