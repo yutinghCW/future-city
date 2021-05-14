@@ -155,6 +155,12 @@
                 margin-left: 40px;
                 margin-bottom: 40px;
             }
+            @media screen and (min-width: 768px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                width: calc((100% - 60.5px) / 3);
+            }
+            @media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                width: calc((100% - 80.5px) / 3);
+            }
             @media screen and (max-width: 767px) {
                 display: flex;
                 flex-wrap: wrap;
