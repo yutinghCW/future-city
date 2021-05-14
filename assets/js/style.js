@@ -29,6 +29,9 @@ $(function(){
     if ( iPhone|android|iPad ) {
         $('.tooltip').addClass('tooltip--disabled');
     }
+    if ( android ) {
+        $('body').addClass('android__mode');
+    }
 
     $('#btn-hamburger').on('click', function() {
         hamClick < 1 ? hamClick++ : hamClick = 0;

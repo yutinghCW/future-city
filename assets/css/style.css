@@ -4925,7 +4925,7 @@ header {
   }
 }
 header.opened {
-  z-index: 1;
+  z-index: 2;
 }
 header .container {
   position: relative;
@@ -5327,6 +5327,10 @@ ul.article__share.show.next--show {
   -ms-transform: translateY(0%);
   -webkit-transform: translateY(0%);
   transform: translateY(0%);
+}
+
+.android__mode strong, .android__mode b, .android__mode h1, .android__mode h2, .android__mode h3, .android__mode h4, .android__mode h5, .android__mode h6 {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
