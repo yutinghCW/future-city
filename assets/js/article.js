@@ -3,6 +3,8 @@ $(function(){
     var height = $(window).height();
 	var headerHeight = $('header').outerHeight();
 
+    $('.article__right').css('padding-top', ($('.article__head').outerHeight() + $('.article__body').outerHeight()/2))
+
     // Initial state
     var scrollPos = 0;
     // adding scroll event

@@ -299,6 +299,11 @@ article .article__right {
   grid-column: 3;
   -ms-grid-column: 3;
 }
+@media screen and (max-width: 1023px) {
+  article .article__right {
+    padding-top: 0 !important;
+  }
+}
 @media screen and (min-width: 1024px) {
   article .article__right {
     padding-left: 30px;
@@ -346,10 +351,10 @@ article .article__right {
   }
 }
 
-.article__body {
+.article__area {
   line-height: 1.8;
 }
-.article__body h2 {
+.article__area h2 {
   margin-top: 30px;
   margin-bottom: 30px;
   padding-left: 10px;
@@ -357,11 +362,11 @@ article .article__right {
   line-height: 1.5;
   border-left: 5px solid #3C00B4;
 }
-.article__body p {
+.article__area p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.article__body blockquote {
+.article__area blockquote {
   position: relative;
   max-width: 270px;
   padding: 20px;
@@ -371,11 +376,11 @@ article .article__right {
   margin-right: auto;
 }
 @media screen and (min-width: 1024px) {
-  .article__body blockquote {
+  .article__area blockquote {
     max-width: 430px;
   }
 }
-.article__body blockquote::before, .article__body blockquote::after {
+.article__area blockquote::before, .article__area blockquote::after {
   position: absolute;
   content: "";
   display: block;
@@ -384,11 +389,11 @@ article .article__right {
   font-size: 1.25rem;
   line-height: 1;
 }
-.article__body blockquote::before {
+.article__area blockquote::before {
   top: 0;
   left: 0;
 }
-.article__body blockquote::after {
+.article__area blockquote::after {
   right: 0;
   bottom: 0;
   -moz-transform: rotate(180deg);
@@ -396,32 +401,32 @@ article .article__right {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.article__body blockquote p {
+.article__area blockquote p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.article__body a {
+.article__area a {
   color: #3C00B4;
   text-decoration: underline;
 }
-.article__body a:hover {
+.article__area a:hover {
   color: #25006E;
 }
-.article__body ul, .article__body ol {
+.article__area ul, .article__area ol {
   padding-left: 3.125em;
   font-weight: 600;
 }
-.article__body .advertisement, .article__body img {
+.article__area .advertisement, .article__area img {
   width: 100%;
 }
 @media screen and (max-width: 1023px) {
-  .article__body .advertisement, .article__body img {
+  .article__area .advertisement, .article__area img {
     margin-left: -30px;
     margin-right: -30px;
     width: calc(100% + 60px);
   }
 }
-.article__body .more__input {
+.article__area .more__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -430,13 +435,13 @@ article .article__right {
   opacity: 0;
   cursor: pointer;
 }
-.article__body .more__input:checked ~ .more__btn::before {
+.article__area .more__input:checked ~ .more__btn::before {
   content: "";
 }
-.article__body .more__input:checked ~ .more__text {
+.article__area .more__input:checked ~ .more__text {
   display: block;
 }
-.article__body .more__btn {
+.article__area .more__btn {
   position: relative;
   padding-right: 1.375rem;
   padding-bottom: 3px;
@@ -444,7 +449,7 @@ article .article__right {
   border-bottom: 1px dashed #3C00B4;
   cursor: pointer;
 }
-.article__body .more__btn::before {
+.article__area .more__btn::before {
   content: "";
   display: block;
   position: absolute;
@@ -459,18 +464,18 @@ article .article__right {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.article__body .more__btn:hover {
+.article__area .more__btn:hover {
   color: #25006E;
   border-color: #25006E;
 }
-.article__body .more__text {
+.article__area .more__text {
   display: none;
   margin: 10px -20px;
   padding: 20px 30px;
   border: 1px solid #E0E0E0;
 }
 @media screen and (min-width: 1024px) {
-  .article__body .more__text {
+  .article__area .more__text {
     margin-left: -30px;
     margin-right: -30px;
   }
