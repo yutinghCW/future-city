@@ -5,22 +5,6 @@ $(function(){
 
     $('.article__right').css('padding-top', ($('.article__head').outerHeight() + $('.article__body').outerHeight()/2))
 
-    // Initial state
-    var scrollPos = 0;
-    // adding scroll event
-    window.addEventListener("scroll", function () {
-        // detects new state and compares it with the new one
-        if (document.body.getBoundingClientRect().top > scrollPos) {
-            $("body").addClass("scroll--up");
-            $("body").css("padding-top", headerHeight);
-        } else {
-            $("body").removeClass("scroll--up");
-            $("body").css("padding-top", 0);
-        }
-        // saves the new position for iteration.
-        scrollPos = document.body.getBoundingClientRect().top;
-    });
-
     $(window).on('scroll', function() {
         var scorll = window.pageYOffset;
         var articleBodyTop = $('.article__body').offset().top;
