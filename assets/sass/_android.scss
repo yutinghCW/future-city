@@ -1,13 +1,15 @@
 .android__mode {
-    strong, b,
-    h1, h2, h3, h4, h5, h6,
-    nav#menu .menu ul .h4,
-    .card__group > .card__item .card__text > a.btn.h2,
-    .card__group > .card__item .card__text > a.btn.h3,
-    .article__preface,
-    .article__box .box__text .h3,
-    .article__author .author__text .h3
-    .article__area ul, .article__area ol {
-        font-weight: 700;
-    }
+    // strong, b,
+    // h1, h2, h3, h4, h5, h6,
+    // nav#menu .menu ul .h4,
+    // .card__group > .card__item .card__text > a.btn.h2,
+    // .card__group > .card__item .card__text > a.btn.h3,
+    // .article__preface,
+    // .article__box .box__text .h3,
+    // .article__author .author__text .h3
+    // .article__area ul, .article__area ol {
+    //     font-weight: 700;
+    // }
+    font-family: 'Roboto', 'Noto Sans TC', '思源黑體 TC', '思源黑體 TW', '思源黑體', '微軟正黑體', '繁黑體', 'Microsoft JhengHei', 'Lato', 'Arial', 'Segoe UI Emoji', 'Segoe UI Symbol', '新細明體', sans-serif;
+    font-display: swap;
 }

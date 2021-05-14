@@ -5329,16 +5329,9 @@ ul.article__share.show.next--show {
   transform: translateY(0%);
 }
 
-.android__mode strong, .android__mode b,
-.android__mode h1, .android__mode h2, .android__mode h3, .android__mode h4, .android__mode h5, .android__mode h6,
-.android__mode nav#menu .menu ul .h4,
-.android__mode .card__group > .card__item .card__text > a.btn.h2,
-.android__mode .card__group > .card__item .card__text > a.btn.h3,
-.android__mode .article__preface,
-.android__mode .article__box .box__text .h3,
-.android__mode .article__author .author__text .h3
-.article__area ul, .android__mode .article__area ol {
-  font-weight: 700;
+.android__mode {
+  font-family: 'Roboto', 'Noto Sans TC', '思源黑體 TC', '思源黑體 TW', '思源黑體', '微軟正黑體', '繁黑體', 'Microsoft JhengHei', 'Lato', 'Arial', 'Segoe UI Emoji', 'Segoe UI Symbol', '新細明體', sans-serif;
+  font-display: swap;
 }
 
 /*# sourceMappingURL=style.css.map */
