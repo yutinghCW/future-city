@@ -45,10 +45,10 @@ $(function(){
     });
     $('#btn-newsletter').on('click', function() {
         $('#newsletter').show();
-        $('.message__black').addClass('opened');
+        $('.touch__close--black').addClass('opened');
     });
-    $('.message__close, .message__black').on('click', function() {
+    $('.message__close, .touch__close--black').on('click', function() {
         $('.message').hide();
-        $('.message__black').removeClass('opened');
+        $('.touch__close--black').removeClass('opened');
     });
 });

@@ -4087,7 +4087,7 @@ h6, .h6 {
 }
 
 .form .form__input {
-  padding: 16px 20px 13px;
+  padding: 15px 20px 14px;
   font-size: 1rem;
   border: 1px solid #E0E0E0;
   outline: 0;
@@ -4466,19 +4466,21 @@ a.text__link--white {
   margin-bottom: 0;
 }
 
-.message__black {
+.touch__close.touch__close--black, .touch__close.touch__close--opacity {
   position: fixed;
-  background-color: #000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
   cursor: pointer;
   z-index: 3;
 }
-.message__black.opened {
+.touch__close.touch__close--black.opened, .touch__close.touch__close--opacity.opened {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+.touch__close.touch__close--black {
+  background-color: #000;
 }
 
 .card__group {
