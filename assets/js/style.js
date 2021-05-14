@@ -20,7 +20,7 @@ $(function(){
     var height = $(window).height();
     var iPhone = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
 	var android = (navigator.userAgent.match(/android/i) != null);
-	var iPad = navigator.userAgent.match(/iPad/i) != null;
+	var iPad = (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 0) || navigator.platform === 'iPad';
 	var headerHeight = $('header').outerHeight();
 
     if ( iPhone|android|iPad ) {
