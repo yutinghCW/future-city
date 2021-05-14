@@ -18,6 +18,9 @@ $position-before: calc(100% + 10px);
 		@include box-shadow(none);
 		@include transition(all ease-out 0.15s);
 		z-index: 998;
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
 	}
 	&:hover {
 		&:before {

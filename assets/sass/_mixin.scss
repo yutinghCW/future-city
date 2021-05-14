@@ -55,7 +55,7 @@
 }
 
 @mixin circleimg($width) {
-    width: 100px;
+    width: $width;
     @include border-radius(50%);
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient($gray-100, $gray-100);
