@@ -6,7 +6,7 @@ function clipboard() {
     $('#copied').fadeIn();
     setTimeout(function(){
         $('#copied').fadeOut();
-    }, 2000)
+    }, 1000)
 }
 
 function focusInput() {
