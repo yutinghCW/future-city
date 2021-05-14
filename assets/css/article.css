@@ -290,6 +290,7 @@ article .article__left {
 @media screen and (min-width: 1024px) {
   article .article__left .article__share {
     display: inline-block;
+    position: fixed;
     position: -webkit-sticky;
     position: sticky;
     top: calc(50% - 87px);

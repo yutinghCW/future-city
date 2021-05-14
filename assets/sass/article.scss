@@ -38,6 +38,7 @@ article {
         .article__share {
             @media screen and (min-width: 1024px) {
                 display: inline-block;
+                position: fixed;
                 position: -webkit-sticky;
                 position: sticky;
                 top: calc(50% - 87px);
