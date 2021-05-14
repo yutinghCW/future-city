@@ -54,10 +54,12 @@
                 &.h4 {
                     text-align: left;
                     @media screen and (max-width: 767px) {
+                        max-height: 3em;
                         @include lineclamp(2);
                     }
                 }
                 &.h5 {
+                    max-height: 4.5em;
                     @include lineclamp(3);
                     text-align: left;
                 }
@@ -72,6 +74,7 @@
                 color: $primary
             }
             p {
+                max-height: 4.5em;
                 @include lineclamp(3);
                 margin-top: 10px;
                 margin-bottom: 15px;
@@ -129,6 +132,7 @@
                 padding-right: 20px;
             }
             > a.btn.h5 {
+                max-height: 3em;
                 -webkit-line-clamp: 2;
             }
         }
@@ -177,6 +181,7 @@
                     width: calc(100% - 120px);
                     padding-right: 10px;
                     > a.btn.h5 {
+                        max-height: 3em;
                         -webkit-line-clamp: 2;
                     }
                 }
@@ -308,6 +313,7 @@
                         padding-right: 20px;
                     }
                     > a.btn.h5 {
+                        max-height: 3em;
                         -webkit-line-clamp: 2;
                     }
                 }

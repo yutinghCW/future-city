@@ -4540,6 +4540,7 @@ a.text__link--white {
 }
 @media screen and (max-width: 767px) {
   .card__group > .card__item .card__text > a.btn.h4 {
+    max-height: 3em;
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 2;
@@ -4547,6 +4548,7 @@ a.text__link--white {
   }
 }
 .card__group > .card__item .card__text > a.btn.h5 {
+  max-height: 4.5em;
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 3;
@@ -4563,6 +4565,7 @@ a.text__link--white {
   color: #3C00B4;
 }
 .card__group > .card__item .card__text p {
+  max-height: 4.5em;
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 3;
@@ -4630,6 +4633,7 @@ a.text__link--white {
   }
 }
 .card__group.card__group--next .card__text > a.btn.h5 {
+  max-height: 3em;
   -webkit-line-clamp: 2;
 }
 @media screen and (min-width: 1024px) {
@@ -4685,6 +4689,7 @@ a.text__link--white {
     padding-right: 10px;
   }
   .card__group.card__group--grid > .card__item .card__text > a.btn.h5 {
+    max-height: 3em;
     -webkit-line-clamp: 2;
   }
 }
@@ -4851,6 +4856,7 @@ a.text__link--white {
   }
 }
 .card__group.card__group--author.card__group--master .card__news .card__text > a.btn.h5 {
+  max-height: 3em;
   -webkit-line-clamp: 2;
 }
 
