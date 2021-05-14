@@ -5,6 +5,10 @@ var width = $(window).width(),
 var iPhone = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
 var android = (navigator.userAgent.match(/android/i) != null);
 var iPad = (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 0) || navigator.platform === 'iPad';
+var isIE = isIE = (navigator.userAgent.indexOf("MSIE") != -1),
+    isIE11 = !!navigator.userAgent.match(/Trident.*rv\:11\./);
+var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1,
+    isWindows = window.navigator.userAgent.indexOf("Windows")!= -1;
 
 function clipboard() {
     var copyText = document.getElementById("copy__input");

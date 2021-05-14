@@ -1,9 +1,11 @@
 .article__next {
     @include transition(transform 0.3s);
     @media screen and (min-width: 1024px) {
+        position: fixed;
         position: -webkit-sticky;
         position: sticky;
         top: calc(50% - 155px);
+        width: 280px;
     }
     @media screen and (max-width: 1023px) {
         position: fixed;

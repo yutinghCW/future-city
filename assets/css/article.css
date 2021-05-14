@@ -215,9 +215,11 @@ ul.article__share #copy__input {
 }
 @media screen and (min-width: 1024px) {
   .article__next {
+    position: fixed;
     position: -webkit-sticky;
     position: sticky;
     top: calc(50% - 155px);
+    width: 280px;
   }
 }
 @media screen and (max-width: 1023px) {
