@@ -1,5 +1,13 @@
 .android__mode {
-    strong, b, h1, h2, h3, h4, h5, h6 {
+    strong, b,
+    h1, h2, h3, h4, h5, h6,
+    nav#menu .menu ul .h4,
+    .card__group > .card__item .card__text > a.btn.h2,
+    .card__group > .card__item .card__text > a.btn.h3,
+    .article__preface,
+    .article__box .box__text .h3,
+    .article__author .author__text .h3
+    .article__area ul, .article__area ol {
         font-weight: 700;
     }
 }
