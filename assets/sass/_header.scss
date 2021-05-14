@@ -9,6 +9,9 @@ header {
         padding-top: 15px;
         padding-bottom: 15px;
     }
+    &.opened {
+        z-index: 2;
+    }
     .container {
         position: relative;
         > * {

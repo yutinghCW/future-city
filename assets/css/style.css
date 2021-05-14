@@ -4924,6 +4924,9 @@ header {
     padding-bottom: 15px;
   }
 }
+header.opened {
+  z-index: 1;
+}
 header .container {
   position: relative;
 }
