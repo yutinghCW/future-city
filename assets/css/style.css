@@ -523,6 +523,15 @@ h6, .h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .sns__icon.sns__icon--instagram {
+    color: #962fbf;
+    background: none;
+  }
+  .sns__icon.sns__icon--instagram:hover {
+    color: #862aab;
+  }
+}
 
 .container-fluid {
   width: 100%;
