@@ -66,10 +66,10 @@
             -webkit-text-fill-color: transparent;
         }
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            color: $instagram-purple;
+            color: $instagram;
             background: none;
             &:hover {
-                color: darken($instagram-purple, 5%);
+                color: darken($instagram, 5%);
             }
         }
     }
