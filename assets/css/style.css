@@ -5057,6 +5057,7 @@ nav#menu .menu ul {
   }
 }
 nav#menu .menu ul .h4 {
+  display: block;
   color: #fff;
   font-weight: 600;
 }
