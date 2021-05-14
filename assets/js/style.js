@@ -66,6 +66,7 @@ $(function(){
         }
     });
     $('#btn-newsletter, #btn-newsletter-m, .message__close, .touch__close--black').on('click', function() {
+        $('#newsletter, #newsletter-conform').hide();
         $('#search, #menu').slideUp();
         $('#btn-hamburger').removeClass('icon-close');
         $('#btn-search').removeClass('icon-close').addClass('icon-search');
