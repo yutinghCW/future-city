@@ -17,6 +17,8 @@ article {
         display: grid;
         -ms-grid-columns: 140px calc(100% - 380px) 240px;
         grid-template-columns: 140px calc(100% - 380px) 240px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     @media screen and (min-width: 1280px) {
         width: 980px;
@@ -24,6 +26,8 @@ article {
         margin-right: auto;
         -ms-grid-columns: 140px 700px 140px;
         grid-template-columns: 140px 700px 140px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .article__left {
         grid-column: 1;
