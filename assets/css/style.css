@@ -4916,7 +4916,7 @@ header {
   padding-bottom: 10px;
   border-bottom: 1px solid #E0E0E0;
   background-color: #fff;
-  z-index: 1;
+  z-index: 4;
 }
 @media screen and (min-width: 768px) {
   header {
@@ -5002,7 +5002,7 @@ nav#menu {
   padding-bottom: 20px;
   font-size: 0;
   background-color: #3C00B4;
-  z-index: 2;
+  z-index: 4;
 }
 @media screen and (min-width: 768px) {
   nav#menu {
@@ -5122,7 +5122,7 @@ nav#menu .sns ul > li > a {
   left: 0;
   width: 100%;
   background-color: #3C00B4;
-  z-index: 2;
+  z-index: 4;
 }
 .search__block .container > * {
   max-width: 700px;

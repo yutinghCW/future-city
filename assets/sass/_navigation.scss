@@ -6,7 +6,7 @@ nav#menu {
     padding-bottom: 20px;
     font-size: 0;
     background-color: $primary;
-    z-index: 2;
+    z-index: 4;
     @media screen and (min-width: 768px) {
         position: absolute;
     }
@@ -110,7 +110,7 @@ nav#menu {
     left: 0;
     width: 100%;
     background-color: $primary;
-    z-index: 2;
+    z-index: 4;
     .container {
         > * {
             max-width: 700px;
