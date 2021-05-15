@@ -4966,6 +4966,7 @@ header .container > * {
 header a.logo {
   position: relative;
   display: table;
+  width: 95px;
   margin-left: auto;
   margin-right: auto;
   -moz-transform: translateY(0%);
@@ -4973,13 +4974,24 @@ header a.logo {
   -webkit-transform: translateY(0%);
   transform: translateY(0%);
 }
-header a.logo img {
-  width: 95px;
-}
 @media screen and (min-width: 768px) {
-  header a.logo img {
+  header a.logo {
     width: 110px;
   }
+}
+header a.logo::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 41.875%;
+}
+header a.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 header #btn-search, header .icon-close {
   font-size: 1.375rem;
