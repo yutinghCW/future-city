@@ -4763,8 +4763,9 @@ a.text__link--white {
 @media screen and (min-width: 768px) {
   .card__group.card__group--author > .card__item {
     display: inline-block;
-    width: calc(100% / 3);
+    width: calc((100% - 60px) / 3);
     margin-top: 100px;
+    margin-left: 30px;
     vertical-align: text-top;
   }
 }
