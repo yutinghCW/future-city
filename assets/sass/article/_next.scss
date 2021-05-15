@@ -5,6 +5,9 @@
         position: -webkit-sticky;
         position: sticky;
         top: calc(50% - 155px);
+        width: 210px;
+    }
+    @media screen and (min-width: 1280px) {
         width: 250px;
     }
     @media screen and (max-width: 1023px) {
