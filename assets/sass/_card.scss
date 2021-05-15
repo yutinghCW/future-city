@@ -148,12 +148,12 @@
                 display: inline-block;
                 width: calc((100% - 60px) / 3);
                 margin-left: 30px;
+                margin-bottom: 40px;
                 vertical-align: text-top;
             }
             @media screen and (min-width: 1024px) {
                 width: calc((100% - 80px) / 3);
                 margin-left: 40px;
-                margin-bottom: 40px;
             }
             @media screen and (min-width: 768px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                 width: calc((100% - 60.5px) / 3);
