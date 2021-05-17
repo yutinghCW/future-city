@@ -5209,13 +5209,22 @@ footer > .container > span:last-child {
 
 .advertisement {
   padding-bottom: 10px;
+  font-size: 0;
   background-color: #F0F0F0;
 }
 .advertisement .h6 {
   color: #8C8C8C;
 }
 .advertisement a {
-  display: block;
+  display: inline-block;
+}
+.advertisement a + a {
+  margin-left: 35px;
+}
+@media screen and (max-width: 1023px) {
+  .advertisement a + a {
+    display: none;
+  }
 }
 .advertisement img {
   width: auto !important;
