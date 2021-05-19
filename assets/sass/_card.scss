@@ -149,14 +149,21 @@
 			+ .card__item {
 				display: -ms-grid;
 				display: grid;
-				align-items: center;
+				-webkit-grid-gap: 10px;
+				-moz-grid-gap: 10px;
 				grid-gap: 10px;
+				-ms-grid-columns: 150px auto;
 				grid-template-columns: 150px auto;
 				direction: rtl;
+				align-items: center;
 				@media screen and (max-width: 1023px) {
 					padding-top: 20px;
 					padding-bottom: 20px;
 					border-top: 1px solid $gray-200;
+				}
+				@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					grid-column: 2;
+					-ms-grid-column: 2;
 				}
 				.card__text {
 					direction: ltr;
@@ -178,6 +185,10 @@
 				grid-row: 1 / span 4;
 				@media screen and (max-width: 1023px) {
 					padding-bottom: 20px;
+				}
+				@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					grid-column: 1;
+					-ms-grid-column: 1;
 				}
 				.card__text {
 					padding-top: 10px;
