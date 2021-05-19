@@ -165,13 +165,23 @@
 					grid-column: 2;
 					-ms-grid-column: 2;
 				}
+				.card__image {
+					@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						grid-column: 1;
+						-ms-grid-column: 1;
+					}
+				}
 				.card__text {
 					direction: ltr;
+					@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						grid-column: 2;
+						-ms-grid-column: 2;
+					}	
 					.card__title {
 						@include lineclamp(2);
 						@media screen and (min-width: 1024px) {
 							-webkit-line-clamp: 3;
-						}		
+						}
 					}
 				}
 				+ .card__item {

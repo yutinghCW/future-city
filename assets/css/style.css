@@ -4666,8 +4666,20 @@ a.text__link--white {
     -ms-grid-column: 2;
   }
 }
+@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card__group.card__group--grid--index > .card__item + .card__item .card__image {
+    grid-column: 1;
+    -ms-grid-column: 1;
+  }
+}
 .card__group.card__group--grid--index > .card__item + .card__item .card__text {
   direction: ltr;
+}
+@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card__group.card__group--grid--index > .card__item + .card__item .card__text {
+    grid-column: 2;
+    -ms-grid-column: 2;
+  }
 }
 .card__group.card__group--grid--index > .card__item + .card__item .card__text .card__title {
   display: -webkit-box;
