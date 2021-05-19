@@ -217,6 +217,9 @@
 				@media screen and (min-width: 1024px) {
 					width: calc((100% - 90px) / 3);
 				}
+				@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					width: calc((100% - 90.5px) / 3);
+				}	
 				@media screen and (max-width: 767px) {
 					display: none;
 				}
@@ -276,6 +279,9 @@
 				+ .card__item {
 					margin-left: 20px;
 				}
+			}
+			@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				width: calc((100% - 60.5px) / 4);
 			}
 			@media screen and (max-width: 1023px) {
 				&:nth-child(2) ~ div {
