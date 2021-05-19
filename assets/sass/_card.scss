@@ -175,10 +175,8 @@
 				}
 				.card__text {
 					width: calc(100% - 150px);
+					padding-right: 10px;
 					direction: ltr;
-					@media screen and (min-width: 1024px) {
-						padding-right: 10px;
-					}
 					@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 						grid-column: 2;
 						-ms-grid-column: 2;
