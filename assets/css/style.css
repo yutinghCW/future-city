@@ -4636,7 +4636,14 @@ a.text__link--white {
     grid-template-columns: calc(((100% - 60px) / 3) * 2) calc(((100% - 60px) / 3) + 30px);
   }
 }
+@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card__group.card__group--grid--index {
+    -ms-grid-columns: 607px 333px;
+    grid-template-columns: 607px 333px;
+  }
+}
 .card__group.card__group--grid--index > .card__item + .card__item {
+  display: -ms-grid;
   display: grid;
   align-items: center;
   grid-gap: 10px;

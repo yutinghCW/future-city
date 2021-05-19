@@ -140,10 +140,14 @@
 			column-gap: 30px;
 			-ms-grid-columns: calc(((100% - 60px) / 3) * 2) calc(((100% - 60px) / 3) + 30px);
 			grid-template-columns: calc(((100% - 60px) / 3) * 2) calc(((100% - 60px) / 3) + 30px);
-	
+		}
+		@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			-ms-grid-columns: 607px 333px;
+			grid-template-columns: 607px 333px;
 		}
 		> .card__item {
 			+ .card__item {
+				display: -ms-grid;
 				display: grid;
 				align-items: center;
 				grid-gap: 10px;
