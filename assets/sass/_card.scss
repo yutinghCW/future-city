@@ -161,6 +161,10 @@
 					padding-bottom: 20px;
 					border-top: 1px solid $gray-200;
 				}
+				@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					grid-column: 2;
+					-ms-grid-column: 2;
+				}
 				.card__text {
 					direction: ltr;
 					.card__title {
@@ -185,10 +189,6 @@
 				@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 					grid-column: 1;
 					-ms-grid-column: 1;
-					-ms-grid-row: 1;
-					grid-row-start: 1;
-					-ms-grid-row-span: 3;
-					grid-row-end: 4;
 				}
 				.card__text {
 					padding-top: 10px;
@@ -267,6 +267,9 @@
 				+ .card__item {
 					margin-left: 30px;
 				}
+			}
+			@media screen and (min-width: 768px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				width: calc((100% - 30.5px) / 2);
 			}
 			@media screen and (min-width: 1024px) {
 				width: calc((100% - 60px) / 4);
@@ -463,6 +466,9 @@
 			@media screen and (min-width: 1024px) {
 				width: calc((100% - 80px) / 3);
 				margin-left: 40px;
+			}
+			@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				width: calc((100% - 80.5px) / 3);
 			}
 			&.card__item--sponsor {
 				@media screen and (max-width: 767px) {
