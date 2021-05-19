@@ -1,4 +1,4 @@
-nav#menu {
+nav.navigation {
     display: none;
     left: 0;
     width: 100%;
@@ -99,6 +99,34 @@ nav#menu {
                     -webkit-text-fill-color: initial;
                     background: none;
                 }
+            }
+        }
+    }
+}
+
+nav.navigation--channel {
+    border-bottom: 1px solid $gray-200;
+    ul {
+        @include list(0, 15px 0, none);
+        font-size: 0;
+        line-height: 1;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding-left: 15px;
+            padding-right: 15px;
+            a {
+                display: block;
+                padding-left: 15px;
+                padding-right: 15px;
+                color: $black;
+                font-size: $fs18;
+                &:hover {
+                    color: $primary-variant;
+                }
+            }
+            + li {
+                border-left: 1px solid $gray-200;
             }
         }
     }

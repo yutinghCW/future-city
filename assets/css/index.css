@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px) {
+  .slogan {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav.navigation--channel {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

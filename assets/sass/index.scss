@@ -1,0 +1,15 @@
+@import "_mixin";
+@import "_variables";
+@import "_color";
+
+.slogan {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+nav.navigation--channel {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
