@@ -160,7 +160,7 @@
 				@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 					grid-column: 2;
 					-ms-grid-column: 2;
-					padding-left: 30px;
+					margin-left: 30px;
 				}
 				> * {
 					display: inline-block;
@@ -184,8 +184,10 @@
 						-ms-grid-column: 2;
 					}	
 					.card__title {
+						height: 3em;
 						@include lineclamp(2);
 						@media screen and (min-width: 1024px) {
+							height: 4.5em;
 							-webkit-line-clamp: 3;
 						}
 					}
@@ -210,8 +212,10 @@
 				.card__text {
 					padding-top: 10px;
 					.card__title {
+						height: 4.5em;
 						@include lineclamp(3);
 						@media screen and (min-width: 1024px) {
+							height: 3em;
 							font-size: $fs28;
 							-webkit-line-clamp: 2;
 						}
