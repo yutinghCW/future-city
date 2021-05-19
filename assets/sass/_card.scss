@@ -161,10 +161,6 @@
 					padding-bottom: 20px;
 					border-top: 1px solid $gray-200;
 				}
-				@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-					grid-column: 2;
-					-ms-grid-column: 2;
-				}
 				.card__text {
 					direction: ltr;
 					.card__title {
@@ -189,6 +185,10 @@
 				@media screen and (min-width: 1024px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 					grid-column: 1;
 					-ms-grid-column: 1;
+					-ms-grid-row: 1;
+					grid-row-start: 1;
+					-ms-grid-row-span: 3;
+					grid-row-end: 4;
 				}
 				.card__text {
 					padding-top: 10px;
