@@ -4651,6 +4651,8 @@ a.text__link--white {
   -ms-grid-columns: 150px auto;
   grid-template-columns: 150px auto;
   direction: rtl;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 @media screen and (max-width: 1023px) {
