@@ -132,6 +132,54 @@ nav.navigation--channel {
     }
 }
 
+nav.channel__list {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 0;
+    line-height: 1.125;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+    > ul {
+        display: inline-block;
+        @include list(0 -10px, 0, none);
+        @media screen and (min-width: 768px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        li {
+            display: inline-block;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            @media screen and (min-width: 768px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            a {
+                display: block;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: $fs16;
+                @media screen and (min-width: 768px) {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    font-size: $fs18;
+                }
+            }
+            &.master {
+                border-right: 1px solid $gray-200;
+                @media screen and (min-width: 768px) {
+                    padding-right: 15px;
+                    margin-right: 5px;
+                }
+                @media screen and (max-width: 767px) {
+                    margin-right: -1px;
+                }
+            }
+        }
+    }
+}
+
 .search__block {
     display: none;
     position: absolute;
