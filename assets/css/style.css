@@ -4533,6 +4533,17 @@ a.text__link--white {
   -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.35, 0.7, 1, 1);
   transition: transform 0.5s cubic-bezier(0.35, 0.7, 1, 1);
 }
+.card__group > .card__item .card__image .sponsor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  padding: 3px 8px;
+  color: #fff;
+  font-size: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 .card__group > .card__item .card__image:hover img {
   -moz-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);

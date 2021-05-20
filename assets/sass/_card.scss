@@ -42,6 +42,17 @@
 				object-fit: cover;
 				@include transition(transform 0.5s cubic-bezier(0.35, 0.7, 1, 1));
 			}
+			.sponsor {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				display: block;
+				padding: 3px 8px;
+				color: $white;
+				font-size: $fs12;
+				background-color: rgba($black, 0.5);
+				z-index: 1;
+			}
 			&:hover {
 				img {
 					@include scale(1.05);
