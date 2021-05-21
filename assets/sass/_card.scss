@@ -104,17 +104,27 @@
 		}
 		.card__button {
 			position: relative;
-			padding-right: $fs14*6;
+			@media screen and (max-width: 374px) {
+				display: flex;
+				flex-direction: column-reverse;
+				align-items: flex-start;
+			}
+			@media screen and (min-width: 375px) {
+				padding-right: $fs14*13;
+			}
 			.time {
-				position: absolute;
-				top: 50%;
-				right: 0;
-				width: $fs14*6;
 				margin-top: 0;
-				margin-bottom: 0;
+				margin-bottom: 15px;
 				color: $gray-300;
-				text-align: right;
-				@include translateY(-50%);
+				@media screen and (min-width: 375px) {
+					position: absolute;
+					top: 50%;
+					right: 0;
+					margin-bottom: 0;
+					width: $fs14*13;
+					text-align: right;
+					@include translateY(-50%);
+				}
 			}
 		}
 	}
@@ -463,10 +473,6 @@
 			@media screen and (min-width: 768px) {
 				padding-top: 60px;
 				padding-bottom: 60px;
-			}
-			@media screen and (min-width: 1024px) {
-				padding-left: 20px;
-				padding-right: 20px;
 			}
 			@media screen and (max-width: 767px) {
 				display: flex;

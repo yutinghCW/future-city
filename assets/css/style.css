@@ -4604,21 +4604,37 @@ a.text__link--white {
 }
 .card__group > .card__item .card__button {
   position: relative;
-  padding-right: 5.25rem;
+}
+@media screen and (max-width: 374px) {
+  .card__group > .card__item .card__button {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 375px) {
+  .card__group > .card__item .card__button {
+    padding-right: 11.375rem;
+  }
 }
 .card__group > .card__item .card__button .time {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 5.25rem;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   color: #8C8C8C;
-  text-align: right;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+}
+@media screen and (min-width: 375px) {
+  .card__group > .card__item .card__button .time {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-bottom: 0;
+    width: 11.375rem;
+    text-align: right;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
 .card__group.card__group--index > .card__item + .card__item .card__text .card__title {
   font-size: 1.125rem;
@@ -5010,12 +5026,6 @@ a.text__link--white {
   .card__group.card__group--list > .card__item {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .card__group.card__group--list > .card__item {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -5437,6 +5447,45 @@ a.text__link--white {
   -ms-transform: scale(1.05, 1.05);
   -webkit-transform: scale(1.05, 1.05);
   transform: scale(1.05, 1.05);
+}
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+}
+.jumbotron > img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron > img {
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .jumbotron > img {
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.jumbotron > .container {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #fff;
+  z-index: 1;
+}
+.jumbotron h1 {
+  font-weight: 500;
+}
+.jumbotron h4 {
+  font-weight: normal;
 }
 
 .section__title {
