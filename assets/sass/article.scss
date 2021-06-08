@@ -170,4 +170,20 @@ article {
 @import "article/_box";
 @import "article/_author";
 @import "article/_around";
+
+.accordion {
+    margin: 30px -20px;
+    @media screen and (min-width: 1024px) {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    a {
+        color: $primary;
+        text-decoration: underline;
+        &:hover {
+            color: $primary-variant;
+        }
+    }
+}
+
 @import "article/_recommend";

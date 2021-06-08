@@ -1,0 +1,59 @@
+.accordion {
+    border-top: 1px solid $gray-200;
+    .accordion-item {
+        border: solid $gray-200;
+        border-width: 0 1px 1px;
+        .accordion-header {
+            position: relative;
+            padding: 0.917em 55px 0.917em 20px;
+            color: $black;
+            font-weight: 600;
+            line-height: 1.5;
+            cursor: pointer;
+            @media screen and (min-width: 1024px) {
+                padding: 0.917em 75px 0.917em 30px;
+            }
+            &::before {
+                @include beforeafter($icon-chevron-left, block);
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                color: $black;
+                font-family: '#{$icomoon-font-family}';
+                @include transform(translateY(-50%) rotate(-90deg));
+                @include transition(color 0.3s, transform 0.3s);
+                @media screen and (min-width: 1024px) {
+                    right: 30px;
+                }
+            }
+            &:hover {
+                color: $primary-variant;
+                &::before {
+                    color: $primary-variant;
+                }
+            }
+            &.active {
+                &::before {
+                    @include transform(translateY(-50%) rotate(90deg));
+                }
+            }
+        }
+        .accordion-body {
+            display: none;
+            padding: 20px;
+            line-height: 1.8;
+            border-top: 1px solid $gray-200;
+            @media screen and (min-width: 1024px) {
+                padding: 20px 30px;
+            }
+            > * {
+                &:first-child {
+                    margin-top: 0;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

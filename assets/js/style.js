@@ -93,7 +93,14 @@ $(function(){
         $(this).parent().parent().parent('.message').hide();
         $('body, header, .touch__close--black').removeClass('opened');
     });
-
+    $('.accordion-header').each(function() {
+        $(this).click(function(){
+            $(this).toggleClass('active');
+            $(this).siblings('.accordion-body').slideToggle();
+            $(this).parent().siblings().children('.accordion-header').removeClass('active');
+            $(this).parent().siblings().children('.accordion-body').slideUp();
+        });
+    });
     // Initial state
     var scrollPos = 0;
     // adding scroll event

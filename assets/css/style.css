@@ -4274,6 +4274,78 @@ a.text__link--white {
   border: 0;
 }
 
+.accordion {
+  border-top: 1px solid #E0E0E0;
+}
+.accordion .accordion-item {
+  border: solid #E0E0E0;
+  border-width: 0 1px 1px;
+}
+.accordion .accordion-item .accordion-header {
+  position: relative;
+  padding: 0.917em 55px 0.917em 20px;
+  color: #000;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .accordion .accordion-item .accordion-header {
+    padding: 0.917em 75px 0.917em 30px;
+  }
+}
+.accordion .accordion-item .accordion-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: #000;
+  font-family: "fc-icon";
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+  -moz-transition: color 0.3s, -moz-transform 0.3s;
+  -o-transition: color 0.3s, -o-transform 0.3s;
+  -webkit-transition: color 0.3s, -webkit-transform 0.3s;
+  transition: color 0.3s, transform 0.3s;
+}
+@media screen and (min-width: 1024px) {
+  .accordion .accordion-item .accordion-header::before {
+    right: 30px;
+  }
+}
+.accordion .accordion-item .accordion-header:hover {
+  color: #25006E;
+}
+.accordion .accordion-item .accordion-header:hover::before {
+  color: #25006E;
+}
+.accordion .accordion-item .accordion-header.active::before {
+  -moz-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+.accordion .accordion-item .accordion-body {
+  display: none;
+  padding: 20px;
+  line-height: 1.8;
+  border-top: 1px solid #E0E0E0;
+}
+@media screen and (min-width: 1024px) {
+  .accordion .accordion-item .accordion-body {
+    padding: 20px 30px;
+  }
+}
+.accordion .accordion-item .accordion-body > *:first-child {
+  margin-top: 0;
+}
+.accordion .accordion-item .accordion-body > *:last-child {
+  margin-bottom: 0;
+}
+
 .tooltip {
   position: relative;
   outline: none;
