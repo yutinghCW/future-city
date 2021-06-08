@@ -97,8 +97,8 @@ $(function(){
         $(this).click(function(){
             $(this).toggleClass('active');
             $(this).siblings('.accordion-body').slideToggle();
-            $(this).parent().siblings().children('.accordion-header').removeClass('active');
-            $(this).parent().siblings().children('.accordion-body').slideUp();
+            // $(this).parent().siblings().children('.accordion-header').removeClass('active');
+            // $(this).parent().siblings().children('.accordion-body').slideUp();
         });
     });
     // Initial state
