@@ -1,0 +1,118 @@
+@import "_mixin";
+@import "_variables";
+@import "_color";
+@import "_accordion";
+
+.cke_editable {
+    line-height: 1.8;
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-left: 10px;
+        font-size: $fs22;
+        line-height: 1.5;
+        border-left: 5px solid $primary;
+    }
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    blockquote {
+        position: relative;
+        max-width: 270px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (min-width: 1024px) {
+            max-width: 430px;
+        }
+        &::before, &::after {
+            position: absolute;
+            @include beforeafter('', block);
+            width: $fs20;
+            height: $fs20;
+            background-color: transparent;
+            background-image: url('../images/ckeditor/queot.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        &::before {
+            top: 0;
+            left: 0;
+        }
+        &::after {
+            right: 0;
+            bottom: 0;
+            @include rotate(180deg);
+        }
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+    a {
+        color: $primary;
+        text-decoration: underline;
+        &:hover {
+            color: $primary-variant;
+        }
+    }
+    ul, ol {
+        padding-left: 3.125em;
+        font-weight: 600;
+    }
+    @import "article/_table";
+    @import "article/_profile";
+    @import "article/_more";
+    .more__btn::before {
+        content: '';
+        width: $fs16;
+        height: $fs16;
+        background-color: transparent;
+        background-image: url('../images/ckeditor/chevron-bottom-circle.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .more__input:checked ~ .more__btn::before {
+        content: '';
+        background-image: url('../images/ckeditor/chevron-top-circle.svg');
+    }
+}
+
+.article__profile, .more__text {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.accordion {
+    .accordion-item {
+        .accordion-body {
+            display: block;
+            .accordion-header {
+                &::before {
+                    content: '';
+                    width: 18px;
+                    height: 27px;
+                    background-color: transparent;
+                    background-image: url('../images/ckeditor/chevron-left.svg');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    @include transform(translateY(-50%) rotate(90deg));
+                }
+            }
+        }
+        a {
+            color: $primary;
+            text-decoration: underline;
+            &:hover {
+                color: $primary-variant;
+            }
+        }
+    }
+}
+
