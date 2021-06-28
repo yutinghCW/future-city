@@ -9,9 +9,9 @@ footer {
             display: inline-block;
             font-size: $fs14;
             line-height: 1;
-            border-left: 1px solid $white;
-            &:first-child {
-                border-left-width: 0;
+            border-right: 1px solid $white;
+            &:last-child {
+                border-right-width: 0;
             }
         }
         > span {
