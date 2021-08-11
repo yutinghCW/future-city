@@ -1,0 +1,40 @@
+$gray-100: #F0F0F0 !default;
+$gray-200: #E0E0E0 !default;
+$gray-300: #8C8C8C !default;
+$gray-400: #646464 !default;
+
+//
+$primary: #3C00B4 !default;
+$primary-lighten: #501BBB !default;
+$primary-variant: #25006E !default;
+
+//
+$white: #fff !default;
+$black: #000 !default;
+
+//
+$facebook: #1877F2 !default;
+$google: #EA4335 !default;
+$instagram: #f00076 !default;
+$instagram-blue: #4f5bd5 !default;
+$instagram-purple: #962fbf !default;
+$instagram-red: #d62976 !default;
+$instagram-orange: #fa7e1e !default;
+$instagram-yellow: #feda75 !default;
+$line: #00C200 !default;
+$rss: #FF5700 !default;
+$cw: #d60c18 !default;
+
+$colors: () !default;
+$colors: map-merge((
+    "primary": $primary,
+    "primary-lighten": $primary-lighten,
+    "primary-variant": $primary-variant,
+    "white": $white,
+    "gray-100": $gray-100,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "gray-400": $gray-400,
+    "black": $black
+    ), $colors
+);
