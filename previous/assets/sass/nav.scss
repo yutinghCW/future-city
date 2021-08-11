@@ -271,6 +271,9 @@ nav.navigation {
 			}
 		}
 	}
+	.scroll--up & {
+		position: fixed;
+	}
 }
 
 .search__block {
@@ -279,7 +282,7 @@ nav.navigation {
 	left: 0;
 	width: 100%;
 	background-color: $primary;
-	z-index: 4;
+	z-index: 11;
 	.container {
 		> * {
 			max-width: 700px;
@@ -289,6 +292,9 @@ nav.navigation {
 		h5 {
 			color: $white;
 		}
+	}
+	.scroll--up & {
+		position: fixed;
 	}
 }
 
@@ -371,4 +377,23 @@ nav,
 		box-sizing: border-box;
 		letter-spacing: normal;
 	}
+}
+
+.touch__close {
+    &.touch__close--black,
+    &.touch__close--opacity {
+        position: fixed;
+        @include opacity(0.4);
+        cursor: pointer;
+		z-index: 10;
+        &.opened {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &.touch__close--black {
+        background-color: $black;
+    }
 }
