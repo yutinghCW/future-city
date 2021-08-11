@@ -1,10 +1,20 @@
 .accordion {
     border-top: 1px solid $gray-200;
     .accordion-item {
+        position: relative;
         border: solid $gray-200;
         border-width: 0 1px 1px;
+        overflow: hidden;
+        input[type="checkbox"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 0;
+            @include opacity(0);
+        }
         .accordion-header {
             position: relative;
+            display: block;
             padding: 0.917em 55px 0.917em 20px;
             color: $black;
             font-weight: 600;
@@ -39,12 +49,18 @@
             }
         }
         .accordion-body {
-            display: none;
-            padding: 20px;
+            max-height: 0;
+            margin-bottom: -1px;
+            padding: 0 20px;
             line-height: 1.8;
             border-top: 1px solid $gray-200;
+            @include transition(max-height 1s linear);
             @media screen and (min-width: 1024px) {
-                padding: 20px 30px;
+                padding: 0 30px;
+            }
+            &::before, &::after {
+                @include beforeafter('', block);
+                height: 20px;
             }
             > * {
                 &:first-child {
@@ -53,6 +69,17 @@
                 &:last-child {
                     margin-bottom: 0;
                 }
+            }
+        }
+        input:checked {
+            + .accordion-header {
+                &::before {
+                    @include transform(translateY(-50%) rotate(90deg));
+                }
+            }
+            ~ .accordion-body {
+                max-height: 100vh;
+                margin-bottom: 0;
             }
         }
     }

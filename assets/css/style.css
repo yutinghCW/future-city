@@ -4278,11 +4278,22 @@ a.text__link--white {
   border-top: 1px solid #E0E0E0;
 }
 .accordion .accordion-item {
+  position: relative;
   border: solid #E0E0E0;
   border-width: 0 1px 1px;
+  overflow: hidden;
+}
+.accordion .accordion-item input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
 }
 .accordion .accordion-item .accordion-header {
   position: relative;
+  display: block;
   padding: 0.917em 55px 0.917em 20px;
   color: #000;
   font-weight: 600;
@@ -4329,20 +4340,40 @@ a.text__link--white {
   transform: translateY(-50%) rotate(90deg);
 }
 .accordion .accordion-item .accordion-body {
-  display: none;
-  padding: 20px;
+  max-height: 0;
+  margin-bottom: -1px;
+  padding: 0 20px;
   line-height: 1.8;
   border-top: 1px solid #E0E0E0;
+  -moz-transition: max-height 1s linear;
+  -o-transition: max-height 1s linear;
+  -webkit-transition: max-height 1s linear;
+  transition: max-height 1s linear;
 }
 @media screen and (min-width: 1024px) {
   .accordion .accordion-item .accordion-body {
-    padding: 20px 30px;
+    padding: 0 30px;
   }
+}
+.accordion .accordion-item .accordion-body::before, .accordion .accordion-item .accordion-body::after {
+  content: "";
+  display: block;
+  height: 20px;
 }
 .accordion .accordion-item .accordion-body > *:first-child {
   margin-top: 0;
 }
 .accordion .accordion-item .accordion-body > *:last-child {
+  margin-bottom: 0;
+}
+.accordion .accordion-item input:checked + .accordion-header::before {
+  -moz-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+.accordion .accordion-item input:checked ~ .accordion-body {
+  max-height: 100vh;
   margin-bottom: 0;
 }
 
