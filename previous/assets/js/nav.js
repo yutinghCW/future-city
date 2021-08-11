@@ -57,7 +57,7 @@ $(function(){
             console.log('d');
         }
     });
-    $('#btn-member').on('click', function() {
+    $('header .sns__group > li.member > button').on('click', function() {
         $(this).siblings('.slide').slideToggle();
     });
 
