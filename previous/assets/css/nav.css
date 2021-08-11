@@ -3918,7 +3918,7 @@ header .sns__group > li {
   }
 }
 @media screen and (max-width: 767px) {
-  header .sns__group > li:last-child {
+  header .sns__group > li.member {
     display: block;
   }
 }
