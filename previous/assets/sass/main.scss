@@ -518,9 +518,14 @@
   position: absolute;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-}
-@media (max-width: 650px) {
-  .tab {bottom: auto;}
+  &:not(.scroll--fixed) {
+    top: auto !important;
+  }
+  &.scroll--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }
 .tab ul li {
   text-align: center;

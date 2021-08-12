@@ -82,15 +82,23 @@ $(function(){
 
     // Initial state
     var scrollPos = 0;
+    var tabOffsetTop = $(".tab").offset().top;
     // adding scroll event
     window.addEventListener("scroll", function () {
         // detects new state and compares it with the new one
         if (document.body.getBoundingClientRect().top > scrollPos) {
             $("body").addClass("scroll--up");
             $("body").css("padding-top", headerHeight);
+            $(".tab").css("top", headerHeight);
         } else {
             $("body").removeClass("scroll--up");
             $("body").css("padding-top", 0);
+            $(".tab").css("top", '0');
+        }
+        if (window.pageYOffset > tabOffsetTop) {
+            $(".tab").addClass("scroll--fixed");
+        } else {
+            $(".tab").removeClass("scroll--fixed");
         }
         // saves the new position for iteration.
         scrollPos = document.body.getBoundingClientRect().top;
