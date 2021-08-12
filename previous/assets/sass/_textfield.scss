@@ -21,8 +21,9 @@
             // border-color: $gray-300;
         }
         &[disabled] {
-            color: $gray-400;
+            color: $black;
             background-color: $gray-100;
+            opacity: 1;
             cursor: not-allowed;
         }
     }

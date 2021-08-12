@@ -3726,8 +3726,9 @@ a, button.btn {
   color: #8C8C8C;
 }
 .form .form__input[disabled] {
-  color: #646464;
+  color: #000;
   background-color: #F0F0F0;
+  opacity: 1;
   cursor: not-allowed;
 }
 .form .form__helper {
