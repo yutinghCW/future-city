@@ -3,10 +3,23 @@
 @import "_variable";
 @import "_color";
 @import "_font";
+
+a, button.btn {
+    text-decoration: none;
+    @include breakpoint(1024px) {
+        @include transition(color .2s, border .2s, background .2s);
+    }
+}
+.w--100 {
+    width: 100%;
+}
+
 @import "_space";
 @import "_iconography";
-@import "_tooltip";
+@import "_textfield";
 @import "_button";
+@import "_tooltip";
+@import "_message";
 
 body.opened {
 	overflow: hidden;
@@ -18,11 +31,11 @@ header {
 	padding-bottom: 10px;
 	border-bottom: 1px solid $gray-200;
 	background-color: $white;
-	z-index: 11;
+    z-index: 15;
 	@media screen and (min-width: 768px) {
 		padding-top: 15px;
 		padding-bottom: 15px;
-		z-index: 12;
+		z-index: 16;
 	}
 	&.opened {
 		z-index: 2;
@@ -108,7 +121,7 @@ header {
 			}
 			&.member {
 				@media screen and (max-width: 767px) {
-					display: block;
+					display: inline-block;
 				}
 			}
 			.slide {
@@ -158,7 +171,7 @@ nav.navigation {
 	padding-bottom: 20px;
 	font-size: 0;
 	background-color: $primary;
-	z-index: 11;
+    z-index: 15;
 	@media screen and (min-width: 768px) {
 		position: absolute;
 	}
@@ -282,7 +295,7 @@ nav.navigation {
 	left: 0;
 	width: 100%;
 	background-color: $primary;
-	z-index: 11;
+    z-index: 14;
 	.container {
 		> * {
 			max-width: 700px;
@@ -372,28 +385,13 @@ nav.navigation {
 
 header,
 nav,
-.search__block {
+.search__block,
+.tooltip,
+.message {
+	box-sizing: border-box;
+	letter-spacing: normal;
 	* {
 		box-sizing: border-box;
 		letter-spacing: normal;
 	}
-}
-
-.touch__close {
-    &.touch__close--black,
-    &.touch__close--opacity {
-        position: fixed;
-        @include opacity(0.4);
-        cursor: pointer;
-		z-index: 10;
-        &.opened {
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-    }
-    &.touch__close--black {
-        background-color: $black;
-    }
 }

@@ -60,12 +60,14 @@ $(function(){
         }
     });
     $('.touch__close--black').on('click', function() {
-        $('#search, #menu').slideUp();
-        $('#btn-hamburger').removeClass('icon-close');
-        $('#btn-search').removeClass('icon-close').addClass('icon-search');
-        $('body, header, .touch__close--black').removeClass('opened');
-        hamClick = 0;
-        searchClick = 0;
+        if (searchClick != 0 || hamClick != 0) {
+            $('#search, #menu').slideUp();
+            $('#btn-hamburger').removeClass('icon-close');
+            $('#btn-search').removeClass('icon-close').addClass('icon-search');
+            $('body, header, .touch__close--black').removeClass('opened');
+            hamClick = 0;
+            searchClick = 0;
+        }
     });
     $('header .sns__group > li.member > button').on('click', function() {
         $(this).siblings('.slide').slideToggle();

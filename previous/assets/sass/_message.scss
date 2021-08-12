@@ -1,0 +1,95 @@
+.message {
+    z-index: 14;
+    &.topside {
+        z-index: 17;
+    }
+    .message__container {
+        position: relative;
+        line-height: 1.5;
+        .message__close {
+            position: absolute;
+            top: 0;
+            right: -10px;
+            font-size: $fs20;
+            cursor: pointer;
+        }
+        p {
+            span {
+                display: inline-block;
+            }
+        }
+        .message__btn {
+            font-size: 0;
+            @media screen and (max-width: 549px) {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+            }
+            a.btn, button.btn {
+                @media screen and (min-width: 550px) {
+                    display: inline-block;
+                }
+                @media screen and (max-width: 549px) {
+                    margin-top: 0.5rem;
+                }
+                + a.btn, + button.btn {
+                    @media screen and (min-width: 550px) {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    &.message--center {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        @include translate(-50%, -50%);
+    }
+    &.message--dialogs {
+        max-width: 480px;
+        width: 90%;
+        padding: 20px 30px 30px;
+        background-color: $white;
+        .message__container {
+            padding-top: 40px;
+        }
+    }
+    &.message--notification {
+        display: table;
+        max-width: 90%;
+        width: auto;
+        padding: $fs18 2.5rem;
+        color: $white;
+        background-color: rgba($black, 0.85);
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.touch__close {
+    &.touch__close--black,
+    &.touch__close--opacity {
+        position: fixed;
+        @include opacity(0.4);
+        cursor: pointer;
+        z-index: 13;
+        &.topside {
+            z-index: 16;
+        }
+        &.opened {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &.touch__close--black {
+        background-color: $black;
+    }
+}

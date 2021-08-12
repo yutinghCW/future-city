@@ -784,6 +784,39 @@
 				</p>
 			</div>
 		</div>
+		<div id="email_check" class="message message--dialogs message--center" style="display: none;">
+			<div class="message__container">
+				<i class="icon icon-close message__close"></i>
+				<div class="message__txt">
+					<h3 class="mt-0 mb-0 pb-5 text-center">您的帳號尚未驗證</h3>
+					<p class="mt-0 mb-15 text-center">為提供您更好的服務品質，請先完成E-mail驗證流程</p>
+				</div>
+				<div class="form">
+					<input id="newsletter-input" type="email" class="form__input w--100" placeholder="請輸入e-mail" value="abcd1234@cw.com.tw" disabled="disabled">
+				</div>
+				<div class="message__btn pt-5 mt-10 text-center">
+					<button class="btn btn--outlined btn--primary btn--standard btn--wide">下次再驗證</button>
+					<button class="btn btn--contained btn--primary btn--standard btn--wide">發送驗證信</button>
+				</div>
+			</div>
+		</div>
+		<div id="email_sent" class="message message--dialogs message--center" style="display: none;">
+			<div class="message__container">
+				<i class="icon icon-close message__close"></i>
+				<div class="message__txt">
+					<h3 class="mt-0 mb-0 pb-5 text-center">已發送驗證信</h3>
+					<p class="mt-0 mb-15 text-center">
+						天下雜誌群已發送驗證信至您的信箱：<span class="text-primary">abcd1234@cw.com.tw</span> 請於 2 小時內點擊信件內的驗證連結，即可繼續使用。
+					</p>
+					<p class="text-gray-400 my-15 text-center">
+						※若您未在信箱中找到驗證信，請檢查您的垃圾郵件。
+					</p>
+				</div>
+				<div class="message__btn pt-5 mt-10 text-center">
+					<button class="btn btn--contained btn--primary btn--standard btn--wide">好</button>
+				</div>
+			</div>
+		</div>
         <div class="touch__close touch__close--black"></div>
 		<script data-cfasync="false" src="https://futurecity.cw.com.tw/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
         <script src="https://futurecity.cw.com.tw/js/cookie-bar.js?id=0413bdc3fc49b78cdd93"></script>
@@ -797,5 +830,19 @@
 		<script type="text/javascript" src="https://futurecity.cw.com.tw/js/webfont_fc.js?id=975fec04396def03e8aa"></script>
 		<script type="text/javascript" src="https://futurecity.cw.com.tw/js/lazysizes.min.js?id=b80e49640d4794d4333d"></script>
 		<script type="text/javascript" src="https://futurecity.cw.com.tw/js/lazy_fc.js?id=c8daf0d2bac7afedd1d6"></script>
+		<script>
+			if ( window.location.href.split('?').pop() == "check" ) {
+				$("#email_check").show().addClass('topside');
+				$('.touch__close--black').addClass('opened topside');
+			}
+			$('#email_check .btn--contained').on('click', function() {
+				$('#email_check').hide().removeClass('topside');
+				$('#email_sent').show().addClass('topside');
+			});
+			$('#email_sent .btn--contained, .message__close').on('click', function() {
+				$('.message').hide().removeClass('topside');
+				$('.touch__close--black').removeClass('opened topside');
+			});
+		</script>
 	</body>
 </html>

@@ -1,0 +1,42 @@
+.form {
+    .form__input {
+        padding: 15px 20px 14px;
+        color: $black;
+        font-size: $fs16;
+        text-align: left;
+        border: 1px solid $gray-200;
+        outline: 0;
+        @include transition(border-color 0.3s);
+        &::placeholder {
+            color: $gray-300;
+            opacity: 1;
+        }
+        &:-ms-input-placeholder {
+            color: $gray-300;
+        }
+        &::-ms-input-placeholder {
+            color: $gray-300;
+        }
+        &:focus {
+            // border-color: $gray-300;
+        }
+        &[disabled] {
+            color: $gray-400;
+            background-color: $gray-100;
+            cursor: not-allowed;
+        }
+    }
+    .form__helper {
+        padding-top: 5px;
+        color: $gray-300;
+        font-size: $fs14;
+        &.form__helper--highlight {
+            color: $cw;
+        }
+    }
+    &.form--error {
+        .form__input {
+            border-color: $cw;
+        }
+    }
+}
