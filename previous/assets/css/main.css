@@ -2766,6 +2766,11 @@ li.thumb a .bg .city-box .eye:after {
   -ms-flex-align: center;
   align-items: center;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .PartnerLogo a img {
+    width: 100%;
+  }
+}
 
 @media (max-width: 517px) {
   .PartnerLogo {
