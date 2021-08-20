@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		body {
+			padding: 0;
+			margin: auto;
+		}
+		p {
+			padding: 0 20px
+		}
+		.ad {
+			padding: 20px;
+			background-color: #fafafa;
+		}
+		#parallax-ads {
+			width: 350px;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>
+		一些測試一些測試一些測試一些測試一些測試
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="ad">
+		<div id="parallax-ads"></div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>
+		一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試一些測試
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<script>
+		// [%creative_width%] = 300
+		// [%creative_height%] = 600
+		// [%image%]
+		var parallax_point = window.parent.document.getElementById("parallax-ads");
+		parallax_point.style.width = 'calc(100% - 40px)';
+		parallax_point.style.margin = '0 auto';
+
+		var content_width = window.parent.innerWidth + 'px';
+		var content_height = window.parent.innerHeight + 10 + 'px';
+		var dispaly_height = Math.round((window.parent.innerWidth/300)*600);
+		var content_imgheight = window.parent.innerHeight - 5 + 'px';
+
+		var img = window.parent.document.createElement("IMG");
+		img.setAttribute('src', 'assets/images/3376493522018421592.jpg');
+		img.style.display = 'block';
+		img.style.height = content_imgheight;
+		img.style.maxHeight = '100%';
+		img.style.width = 'auto';
+		img.style.maxWidth = 'inherit';
+		img.style.setProperty('height', content_imgheight, 'important');
+		
+		var div_layer4 = window.parent.document.createElement("DIV");
+		div_layer4.style.position = 'fixed';
+		div_layer4.style.top = '65px';
+		div_layer4.style.left = '0px';
+		div_layer4.style.width = '100%';
+		div_layer4.style.display = 'flex';
+		div_layer4.style.justifyContent = 'center';
+		
+		var div_layer3 = window.parent.document.createElement("DIV");
+		div_layer3.style.width = '100%';
+		div_layer3.style.height = '100%';
+		div_layer3.style.clip = 'rect(0px, auto, auto, 0px)';
+		div_layer3.style.WebkitClipPath = 'polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%)';
+		div_layer3.style.overflow = 'hidden';
+		div_layer3.style.position = 'absolute';
+		div_layer3.style.top = '0px';
+		div_layer3.style.left = '0px';
+		
+		var div_layer2 = window.parent.document.createElement("DIV");
+		div_layer2.style.position = 'absolute';
+		div_layer2.style.width = '100%';
+		div_layer2.style.height = '100%';
+		div_layer2.style.overflow = 'hidden';
+		
+		var div_layer1 = window.parent.document.createElement("DIV");
+		div_layer1.style.position = 'relative';
+		div_layer1.style.width = '100%';
+		if (600 > window.parent.innerHeight) {
+			div_layer1.style.height = content_height;
+		} else {
+			div_layer1.style.height = content_height;
+		}
+		div_layer1.style.overflow = 'hidden';
+		
+		var clickThrough = window.parent.document.createElement("A");
+		clickThrough.setAttribute('href', '%%CLICK_URL_ESC%%[%clickThrough%]');
+		clickThrough.setAttribute('target', '_blank');
+		clickThrough.style.position = 'absolute';
+		clickThrough.style.top = '0px';
+		clickThrough.style.left = '0px';
+		clickThrough.style.right = '0px';
+		clickThrough.style.bottom = '0px';
+		clickThrough.style.zIndex = '10';
+		clickThrough.style.width = '100%';
+		
+		var ads_comment = window.parent.document.createElement("DIV");
+		ads_comment.style.display = 'block';
+		ads_comment.style.width = content_width;
+		ads_comment.style.maxWidth = '100%';
+		ads_comment.style.top = '0px';
+		ads_comment.style.left = '0px';
+		ads_comment.style.position = 'absolute';
+		ads_comment.style.padding = '0px';
+		ads_comment.style.margin = '0px';
+		ads_comment.style.transform = 'translateZ(5px)';
+		
+		var ads_title = window.parent.document.createElement("DIV");
+		ads_title.style.fontSize = '10px';
+		ads_title.style.fontFamily = 'Arial,Helvetica,sans-serif';
+		ads_title.style.color = '#fff';
+		ads_title.style.lineHeight = '18px';
+		ads_title.style.height = '18px';
+		ads_title.style.padding = '0';
+		ads_title.style.backgroundColor = '#161616';
+		ads_title.style.textAlign = 'center';
+		ads_title.style.textTransForm = 'uppercase';
+		ads_title.style.letterSpacing = '1px';
+		ads_title.innerHTML = 'advertisement';
+		
+		ads_comment.appendChild(ads_title);
+		
+		div_layer4.appendChild(img);
+		div_layer3.appendChild(div_layer4);
+		div_layer2.appendChild(div_layer3);
+		div_layer2.appendChild(clickThrough);
+		div_layer2.appendChild(ads_comment);
+		div_layer1.appendChild(div_layer2);
+		parallax_point.appendChild(div_layer1);
+	</script>
+</body>
+</html>
