@@ -130,29 +130,40 @@ header {
 			.slide {
 				display: none;
 				position: absolute;
-				top: 100%;
+				top: calc(100% + 10px);
 				right: 0;
-				padding-top: 10px;
-			}
-			ul {
-				width: max-content;
-				min-width: calc(#{$fs16}*2 + 42px);
-				max-width: 140px;
-				padding: 10px;
+				padding: 5px 0;
+				line-height: 1.5;
 				background-color: $white;
-				border: 1px solid $gray-400;
-				li {
-					display: block;
-					margin: 0;
-					> a, > span {
+				border: 1px solid $gray-200;
+				ul {
+					width: max-content;
+					min-width: calc(#{$fs16}*2 + 42px);
+					max-width: 140px;
+					li {
 						display: block;
-						padding: 10px;
-						font-size: $fs16;
-						font-weight: normal;
-						line-height: 1.25;
-					}
-					a:hover {
-						color: $primary-lighten;
+						margin: 0;
+						> a, > span {
+							display: block;
+							padding: 5px 20px;
+							color: $black;
+							font-size: 1rem;
+						}
+						> a:hover {
+							color: $primary;
+						}
+						> span {
+							padding: 5px 20px;
+							font-weight: 300;
+						}
+						&.username {
+							margin-bottom: 5px;
+							padding-bottom: 5px;
+							border-bottom: 1px solid $gray-200;
+							> span {
+								line-height: 1.25;
+							}
+						}
 					}
 				}
 			}

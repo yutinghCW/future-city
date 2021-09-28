@@ -146,16 +146,16 @@
   content: "";
 }
 
-.icon-close:before {
-  content: "";
-}
-
 .icon-search:before {
   content: "";
 }
 
 .icon-user-filled:before {
   content: "";
+}
+
+.icon-close:before {
+  content: "";
 }
 
 a, button.btn {
@@ -4155,31 +4155,42 @@ header .sns__group > li {
 header .sns__group > li .slide {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 10px);
   right: 0;
-  padding-top: 10px;
+  padding: 5px 0;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
 }
-header .sns__group > li ul {
+header .sns__group > li .slide ul {
   width: max-content;
   min-width: calc(1rem*2 + 42px);
   max-width: 140px;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #646464;
 }
-header .sns__group > li ul li {
+header .sns__group > li .slide ul li {
   display: block;
   margin: 0;
 }
-header .sns__group > li ul li > a, header .sns__group > li ul li > span {
+header .sns__group > li .slide ul li > a, header .sns__group > li .slide ul li > span {
   display: block;
-  padding: 10px;
+  padding: 5px 20px;
+  color: #000;
   font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.25;
 }
-header .sns__group > li ul li a:hover {
-  color: #501BBB;
+header .sns__group > li .slide ul li > a:hover {
+  color: #3C00B4;
+}
+header .sns__group > li .slide ul li > span {
+  padding: 5px 20px;
+  font-weight: 300;
+}
+header .sns__group > li .slide ul li.username {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #E0E0E0;
+}
+header .sns__group > li .slide ul li.username > span {
+  line-height: 1.25;
 }
 .scroll--up header {
   position: fixed;

@@ -87,11 +87,6 @@
     content: $icon-chevron-right;
   }
 }
-.icon-close {
-  &:before {
-    content: $icon-close;
-  }
-}
 .icon-search {
   &:before {
     content: $icon-search;
@@ -100,5 +95,10 @@
 .icon-user-filled {
   &:before {
     content: $icon-user-filled;
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close;
   }
 }

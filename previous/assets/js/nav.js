@@ -28,6 +28,7 @@ $(function(){
         $('#menu').slideToggle();
         $('#search').slideUp();
         $('#btn-search').removeClass('icon-close').addClass('icon-search');
+        $('li.member > button > .icon').removeClass('icon-close');
         $('header .sns__group > li.member > .slide').slideUp();
         searchClick = 0;
         if (hamClick == 0) {
@@ -40,7 +41,7 @@ $(function(){
     });
     $('#btn-close-nav').on('click', function() {
         $('#menu').slideUp();
-        $('#btn-hamburger').removeClass('icon-close');
+        $('#btn-hamburger, li.member > button > .icon').removeClass('icon-close');
         $('body, .touch__close--black').removeClass('opened');
     });
     $('#btn-search').on('click', function() {
@@ -48,7 +49,7 @@ $(function(){
         $(this).toggleClass('icon-search icon-close');
         $('#search').slideToggle();
         $('#menu').slideUp();
-        $('#btn-hamburger').removeClass('icon-close');
+        $('#btn-hamburger, li.member > button > .icon').removeClass('icon-close');
         $('header .sns__group > li.member > .slide').slideUp();
         hamClick = 0;
         if (searchClick == 0) {
@@ -62,7 +63,7 @@ $(function(){
     $('.touch__close--black').on('click', function() {
         if (searchClick != 0 || hamClick != 0) {
             $('#search, #menu').slideUp();
-            $('#btn-hamburger').removeClass('icon-close');
+            $('#btn-hamburger, li.member > button > .icon').removeClass('icon-close');
             $('#btn-search').removeClass('icon-close').addClass('icon-search');
             $('body, header, .touch__close--black').removeClass('opened');
             hamClick = 0;
@@ -70,8 +71,10 @@ $(function(){
         }
     });
     $('header .sns__group > li.member > button').on('click', function() {
+        $(this).children('.icon').toggleClass('icon-close');
         $(this).siblings('.slide').slideToggle();
         $(this).parent('li.member').siblings('li.member').children('.slide').slideUp();
+        $(this).parent('li.member').siblings('li.member').children('button').children('.icon').removeClass('icon-close');
         $('body, .touch__close--black').removeClass('opened');
         $('#btn-hamburger').removeClass('icon-close');
         $('#btn-search').removeClass('icon-close').addClass('icon-search');
