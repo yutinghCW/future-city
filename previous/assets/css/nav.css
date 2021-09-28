@@ -4073,6 +4073,9 @@ header .container {
     width: 1320px;
   }
 }
+header .container.except-index {
+  max-width: 1000px;
+}
 header .container > * {
   position: absolute;
   top: 50%;
@@ -4233,6 +4236,9 @@ nav.navigation .container {
     width: 1320px;
   }
 }
+nav.navigation .container.except-index {
+  max-width: 1000px;
+}
 nav.navigation .icon-close {
   position: absolute;
   top: 20px;
@@ -4340,6 +4346,9 @@ nav.navigation .sns ul > li > a {
   width: 100%;
   background-color: #3C00B4;
   z-index: 14;
+}
+.search__block .container.except-index {
+  max-width: 1000px;
 }
 .search__block .container > * {
   max-width: 700px;

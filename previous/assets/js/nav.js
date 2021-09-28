@@ -32,10 +32,10 @@ $(function(){
         searchClick = 0;
         if (hamClick == 0) {
             $('body, .touch__close--black').removeClass('opened');
-            console.log('a');
+            // console.log('a');
         } else {
             $('body, .touch__close--black').addClass('opened');
-            console.log('b');
+            // console.log('b');
         }
     });
     $('#btn-close-nav').on('click', function() {
@@ -53,10 +53,10 @@ $(function(){
         hamClick = 0;
         if (searchClick == 0) {
             $('body, .touch__close--black').removeClass('opened');
-            console.log('c');
+            // console.log('c');
         } else {
             $('body, .touch__close--black').addClass('opened');
-            console.log('d');
+            // console.log('d');
         }
     });
     $('.touch__close--black').on('click', function() {
@@ -82,7 +82,11 @@ $(function(){
 
     // Initial state
     var scrollPos = 0;
-    var tabOffsetTop = $(".tab").offset().top;
+    if ( $(".tab").length > 0 ) {
+        var tabOffsetTop = $(".tab").offset().top;
+    } else {
+        var tabOffsetTop = 0;
+    }
     // adding scroll event
     window.addEventListener("scroll", function () {
         // detects new state and compares it with the new one
