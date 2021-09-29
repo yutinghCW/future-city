@@ -47,7 +47,7 @@
         position: fixed;
         top: 50%;
         left: 50%;
-        @include translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     &.message--dialogs {
         max-width: 480px;
@@ -76,7 +76,7 @@
     &.touch__close--black,
     &.touch__close--opacity {
         position: fixed;
-        @include opacity(0.4);
+        opacity: 0.4;
         cursor: pointer;
         z-index: 13;
         &.topside {

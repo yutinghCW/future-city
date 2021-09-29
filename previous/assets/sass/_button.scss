@@ -25,7 +25,7 @@ a.btn, button.btn {
     }
     &.btn--outlined {
         text-align: center;
-        @include border-radius(30px);
+        border-radius: 30px;
         &.btn--black {
             color: $black;
             border-color: $black;
@@ -50,7 +50,7 @@ a.btn, button.btn {
     &.btn--contained {
         color: $white;
         text-align: center;
-        @include border-radius(30px);
+        border-radius: 30px;
         &.btn--black {
             background-color: $black;
             border-color: $black;
