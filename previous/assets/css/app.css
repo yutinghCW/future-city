@@ -2,13 +2,13 @@
 Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
        Load paths:
          Compass::SpriteImporter
-         /Users/huangyuting/Documents/GitHub/future-city/previous/assets/sass
+         /Users/yutingh/Documents/GitHub/future-city/previous/assets/sass
          /Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets
          /Library/Ruby/Gems/2.6.0/gems/compass-normalize-1.5/stylesheets
          /Library/Ruby/Gems/2.6.0/gems/susy-2.2.14/sass
          /Library/Ruby/Gems/2.6.0/gems/sassy-maps-0.4.0/sass
          /Library/Ruby/Gems/2.6.0/gems/breakpoint-2.7.1/stylesheets
-        on line 9 of /Users/huangyuting/Documents/GitHub/future-city/previous/assets/sass/app.scss
+        on line 9 of /Users/yutingh/Documents/GitHub/future-city/previous/assets/sass/app.scss
 
 4: 
 5: // Variables
@@ -23,7 +23,7 @@ Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
 14: }
 
 Backtrace:
-/Users/huangyuting/Documents/GitHub/future-city/previous/assets/sass/app.scss:9
+/Users/yutingh/Documents/GitHub/future-city/previous/assets/sass/app.scss:9
 /Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -68,4 +68,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/huangyuting/Documents/GitHub/future-city/previous/assets/sass\A          /Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets\A          /Library/Ruby/Gems/2.6.0/gems/compass-normalize-1.5/stylesheets\A          /Library/Ruby/Gems/2.6.0/gems/susy-2.2.14/sass\A          /Library/Ruby/Gems/2.6.0/gems/sassy-maps-0.4.0/sass\A          /Library/Ruby/Gems/2.6.0/gems/breakpoint-2.7.1/stylesheets\A         on line 9 of /Users/huangyuting/Documents/GitHub/future-city/previous/assets/sass/app.scss\A \A 4: \A 5: // Variables\A 6: @import \"variables\";\A 7: \A 8: // Bootstrap\A 9: @import '~bootstrap/scss/bootstrap';\A 10: \A 11: .navbar-laravel {\A 12:   background-color: #fff;\A 13:   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);\A 14: }"; }
+  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/yutingh/Documents/GitHub/future-city/previous/assets/sass\A          /Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets\A          /Library/Ruby/Gems/2.6.0/gems/compass-normalize-1.5/stylesheets\A          /Library/Ruby/Gems/2.6.0/gems/susy-2.2.14/sass\A          /Library/Ruby/Gems/2.6.0/gems/sassy-maps-0.4.0/sass\A          /Library/Ruby/Gems/2.6.0/gems/breakpoint-2.7.1/stylesheets\A         on line 9 of /Users/yutingh/Documents/GitHub/future-city/previous/assets/sass/app.scss\A \A 4: \A 5: // Variables\A 6: @import \"variables\";\A 7: \A 8: // Bootstrap\A 9: @import '~bootstrap/scss/bootstrap';\A 10: \A 11: .navbar-laravel {\A 12:   background-color: #fff;\A 13:   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);\A 14: }"; }

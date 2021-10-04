@@ -75,11 +75,52 @@ header {
             @media screen and (max-width: 767px) {
                 display: none;
             }
-            &:last-child {
+            &.member {
+                position: relative;
                 @media screen and (max-width: 767px) {
-                    display: block;
+                    display: inline-block;
                 }
-            }    
+            }
+            .slide {
+                display: none;
+                position: absolute;
+                top: calc(100% + 10px);
+                right: 0;
+                padding: 5px 0;
+                line-height: 1.5;
+                background-color: $white;
+                border: 1px solid $gray-200;
+                ul {
+                    width: max-content;
+                    min-width: calc(#{$fs16}*2 + 42px);
+                    max-width: 140px;
+                    li {
+                        display: block;
+                        margin: 0;
+                        > a, > span {
+                            display: block;
+                            padding: 5px 20px;
+                            color: $black;
+                            font-size: 1rem;
+                        }
+                        > a:hover {
+                            color: $primary;
+                        }
+                        > span {
+                            padding: 5px 20px;
+                            font-weight: normal;
+                        }
+                        &.username {
+                            margin-bottom: 5px;
+                            padding-bottom: 5px;
+                            border-bottom: 1px solid $gray-200;
+                            > span {
+                                line-height: 1.25;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

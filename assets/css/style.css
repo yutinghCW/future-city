@@ -435,16 +435,20 @@ h6, .h6 {
   content: "";
 }
 
-.icon-close:before {
-  content: "";
-}
-
 .icon-search:before {
   content: "";
 }
 
 .icon-user-filled:before {
   content: "";
+}
+
+.icon-user-outlined:before {
+  content: "";
+}
+
+.icon-close:before {
+  content: "";
 }
 
 .hamburger {
@@ -495,6 +499,8 @@ h6, .h6 {
 .sns__icon {
   display: block;
   padding: 5px;
+  background-color: transparent;
+  border-width: 0;
 }
 .sns__icon i.icon {
   display: block;
@@ -5750,10 +5756,53 @@ header .sns__group {
     display: none;
   }
 }
+header .sns__group li.member {
+  position: relative;
+}
 @media screen and (max-width: 767px) {
-  header .sns__group li:last-child {
-    display: block;
+  header .sns__group li.member {
+    display: inline-block;
   }
+}
+header .sns__group li .slide {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  padding: 5px 0;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+}
+header .sns__group li .slide ul {
+  width: max-content;
+  min-width: calc(1rem*2 + 42px);
+  max-width: 140px;
+}
+header .sns__group li .slide ul li {
+  display: block;
+  margin: 0;
+}
+header .sns__group li .slide ul li > a, header .sns__group li .slide ul li > span {
+  display: block;
+  padding: 5px 20px;
+  color: #000;
+  font-size: 1rem;
+}
+header .sns__group li .slide ul li > a:hover {
+  color: #3C00B4;
+}
+header .sns__group li .slide ul li > span {
+  padding: 5px 20px;
+  font-weight: normal;
+}
+header .sns__group li .slide ul li.username {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #E0E0E0;
+}
+header .sns__group li .slide ul li.username > span {
+  line-height: 1.25;
 }
 
 nav.navigation {

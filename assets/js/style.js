@@ -93,6 +93,19 @@ $(function(){
         $(this).parent().parent().parent('.message').hide();
         $('body, header, .touch__close--black').removeClass('opened');
     });
+    $('header .sns__group > li.member > button').on('click', function() {
+        $(this).children('.icon').toggleClass('icon-close');
+        $(this).siblings('.slide').slideToggle();
+        $(this).parent('li.member').siblings('li.member').children('.slide').slideUp();
+        $(this).parent('li.member').siblings('li.member').children('button').children('.icon').removeClass('icon-close');
+        $('body, .touch__close--black').removeClass('opened');
+        $('#btn-hamburger').removeClass('icon-close');
+        $('#btn-search').removeClass('icon-close').addClass('icon-search');
+        $('#search, #menu').slideUp();
+        hamClick = 0;
+        searchClick = 0;
+    });
+
     // Initial state
     var scrollPos = 0;
     // adding scroll event

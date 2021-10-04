@@ -97,6 +97,11 @@
     content: $icon-user-filled;
   }
 }
+.icon-user-outlined {
+  &:before {
+    content: $icon-user-outlined;
+  }
+}
 .icon-close {
   &:before {
     content: $icon-close;

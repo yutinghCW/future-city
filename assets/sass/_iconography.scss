@@ -40,6 +40,8 @@
 .sns__icon {
     display: block;
     padding: 5px;
+    background-color: transparent;
+    border-width: 0;
     i.icon {
         display: block;
         font-size: $fs22;

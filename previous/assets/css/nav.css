@@ -154,6 +154,10 @@
   content: "";
 }
 
+.icon-user-outlined:before {
+  content: "";
+}
+
 .icon-close:before {
   content: "";
 }
